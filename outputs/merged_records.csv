@@ -1,0 +1,11 @@
+master_id,name,email,phone,address,source_ids,source_count,match_reasons,conflicting_fields
+M00001,John Smith,john@gmail.com,9876543210,"12 MG Road, Hyderabad",C001|C002|C003,3,exact_email_and_phone|similar_name_same_phone,name|email
+M00002,Alice Johnson,alice@gmail.com,9999999999,"4 Park Street, Mumbai",C004,1,,
+M00003,Robert Taylor,robert.t@gmail.com,9123456780,"8 Lake View, Pune",C005|C006,2,similar_name_same_email,
+M00004,Katherine Brown,kath.brown@yahoo.com,9811122233,,C007,1,,
+M00005,Kathryn Brown,kathy.b@outlook.com,9811122233,,C008,1,,
+M00006,John Smyth,jsmyth@outlook.com,9000000002,,C009,1,,
+M00007,Ramesh Kumar,ramesh.k@gmail.com,9700011122,"Banjara Hills, Hyderabad",C010,1,,
+M00008,Ramesh Kumaar,rk2024@gmail.com,9700099988,,C011,1,,
+M00009,Meera Iyer,meera.iyer@gmail.com,9845012345,"Indiranagar, Bengaluru",C012,1,,
+M00010,Arjun Rao,arjun.rao@gmail.com,9505050505,,C013,1,,

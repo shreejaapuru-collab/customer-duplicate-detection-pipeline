@@ -1,0 +1,17 @@
+customer_id,name,email,phone,address
+C001,John Smith,john@gmail.com,9876543210,"12 MG Road, Hyderabad"
+C002,Jon Smith,john@gmail.com,9876543210,
+C003,John S. Smith,john123@gmail.com,9876543210,
+C004,Alice Johnson,alice@gmail.com,9999999999,"4 Park Street, Mumbai"
+C005,Robert Taylor,robert.t@gmail.com,,"8 Lake View, Pune"
+C006,Robert Taylor,robert.t@gmail.com,9123456780,
+C007,Katherine Brown,kath.brown@yahoo.com,9811122233,
+C008,Kathryn Brown,kathy.b@outlook.com,9811122233,
+C009,John Smyth,jsmyth@outlook.com,9000000002,
+C010,Ramesh Kumar,ramesh.k@gmail.com,9700011122,"Banjara Hills, Hyderabad"
+C011,Ramesh Kumaar,rk2024@gmail.com,9700099988,
+C012,Meera Iyer,meera.iyer@gmail.com,9845012345,"Indiranagar, Bengaluru"
+C013,Arjun Rao,arjun.rao@gmail.com,9505050505,
+C014,,nobody@gmail.com,9000011111,
+C015,Sneha Reddy,sneha.reddy@gmail.com,12345,
+C016,Vikram Singh,,9899988877,

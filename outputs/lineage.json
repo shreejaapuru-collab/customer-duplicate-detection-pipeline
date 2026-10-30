@@ -1,0 +1,113 @@
+[
+  {
+    "master_id": "M00001",
+    "source_records": [
+      "C001",
+      "C002",
+      "C003"
+    ],
+    "match_reasons": [
+      "exact_email_and_phone",
+      "similar_name_same_phone"
+    ],
+    "conflicting_fields": [
+      "name",
+      "email"
+    ],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  },
+  {
+    "master_id": "M00002",
+    "source_records": [
+      "C004"
+    ],
+    "match_reasons": [],
+    "conflicting_fields": [],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  },
+  {
+    "master_id": "M00003",
+    "source_records": [
+      "C005",
+      "C006"
+    ],
+    "match_reasons": [
+      "similar_name_same_email"
+    ],
+    "conflicting_fields": [],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  },
+  {
+    "master_id": "M00004",
+    "source_records": [
+      "C007"
+    ],
+    "match_reasons": [],
+    "conflicting_fields": [],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  },
+  {
+    "master_id": "M00005",
+    "source_records": [
+      "C008"
+    ],
+    "match_reasons": [],
+    "conflicting_fields": [],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  },
+  {
+    "master_id": "M00006",
+    "source_records": [
+      "C009"
+    ],
+    "match_reasons": [],
+    "conflicting_fields": [],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  },
+  {
+    "master_id": "M00007",
+    "source_records": [
+      "C010"
+    ],
+    "match_reasons": [],
+    "conflicting_fields": [],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  },
+  {
+    "master_id": "M00008",
+    "source_records": [
+      "C011"
+    ],
+    "match_reasons": [],
+    "conflicting_fields": [],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  },
+  {
+    "master_id": "M00009",
+    "source_records": [
+      "C012"
+    ],
+    "match_reasons": [],
+    "conflicting_fields": [],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  },
+  {
+    "master_id": "M00010",
+    "source_records": [
+      "C013"
+    ],
+    "match_reasons": [],
+    "conflicting_fields": [],
+    "survivorship_rule": "non_null > most_frequent > most_complete_record > lowest_customer_id",
+    "run_id": "run_1dea43ce02"
+  }
+]

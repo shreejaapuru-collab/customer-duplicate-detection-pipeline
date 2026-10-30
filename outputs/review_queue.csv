@@ -1,0 +1,4 @@
+record1,record2,similarity_score,reason,name_1,name_2,email_1,email_2,phone_1,phone_2
+C010,C011,96.0,similar_name_no_shared_identifier,Ramesh Kumar,Ramesh Kumaar,ramesh.k@gmail.com,rk2024@gmail.com,9700011122,9700099988
+C001,C009,90.0,similar_name_no_shared_identifier,John Smith,John Smyth,john@gmail.com,jsmyth@outlook.com,9876543210,9000000002
+C007,C008,85.7,name_below_auto_threshold_same_phone,Katherine Brown,Kathryn Brown,kath.brown@yahoo.com,kathy.b@outlook.com,9811122233,9811122233

@@ -1,0 +1,4 @@
+record_id,reason,raw_name,raw_email,raw_phone
+C014,missing_name,,nobody@gmail.com,9000011111
+C015,invalid_phone,Sneha Reddy,sneha.reddy@gmail.com,12345
+C016,missing_email,Vikram Singh,,9899988877
