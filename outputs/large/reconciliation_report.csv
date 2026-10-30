@@ -1,0 +1,8 @@
+check_name,expected,actual,status,detail
+input_equals_valid_plus_rejected,10000,10000,PASS,every input row is either valid or rejected
+valid_equals_sum_of_master_source_counts,9500,9500,PASS,no valid record lost or duplicated by merging
+every_valid_id_in_exactly_one_master,9500 ids,9500 ids,PASS,lineage covers all valid ids exactly once
+master_ids_unique,7613,7613,PASS,
+rejects_have_reason,0,0,PASS,every rejected row is explained
+review_pairs_reference_known_ids,0,0,PASS,
+review_pairs_not_already_merged,0,0,PASS,

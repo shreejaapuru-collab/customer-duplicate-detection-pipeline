@@ -28,7 +28,13 @@ python -m pytest -v
 
 python generator.py --rows 10000 --seed 42 --out data/generated/customers_10000.csv
 python main.py --input data/generated/customers_10000.csv --output-dir outputs/large
+python -m src.evaluate --labels data/generated/customers_10000_labels.csv --outputs outputs/large
 ```
+
+The generator writes the pipeline input to `customers_10000.csv` and its expected-answer labels
+separately to `customers_10000_labels.csv`; labels are never included in the input CSV. The
+evaluation command writes `evaluation_report.json` alongside the pipeline outputs. The pipeline
+also writes `reconciliation_report.csv` on every successful run.
 
 If PowerShell blocks activation, allow it for the current terminal only, then activate:
 
@@ -49,6 +55,7 @@ python -m pytest -v
 
 python generator.py --rows 10000 --seed 42 --out data/generated/customers_10000.csv
 python main.py --input data/generated/customers_10000.csv --output-dir outputs/large
+python -m src.evaluate --labels data/generated/customers_10000_labels.csv --outputs outputs/large
 ```
 
 ## Project structure
@@ -63,12 +70,14 @@ src/
   duplicate_detection.py   blocking + pair scoring + clustering + review queue
   survivorship.py    golden-record rules
   lineage.py         master_id -> source_records
+  reconcile.py       source-to-target count and key checks
+  evaluate.py        compare results with generator ground-truth labels
   publish.py         atomic CSV/JSON writers, metrics upsert
   pipeline.py        orchestrates all stages
   logger.py          console + logs/pipeline.log
-tests/               pytest suite (validation, duplicates, idempotency)
+tests/               pytest suite (validation, duplicates, retries, edge cases, evaluation)
 data/sample/         small hand-made dataset (covers every case)
-outputs/             results of running on the sample
+outputs/             sample results; outputs/large/ holds the 10k run
 docs/                architecture.md, data_dictionary.md
 ```
 
@@ -97,7 +106,9 @@ record -> lowest `customer_id`. Fields that disagreed are listed in `conflicting
 | `review_queue.csv` | record1, record2, similarity_score, reason (+ names/emails/phones for the reviewer) |
 | `rejected_records.csv` | record_id, reason (+ raw values) |
 | `lineage.json` | `{"master_id": "M00001", "source_records": ["C001","C002","C003"], ...}` |
-| `run_metrics.csv` | run_id, start/end time, status, input/valid/reject/output counts, ... |
+| `reconciliation_report.csv` | checks that input rows reconcile, valid IDs appear in exactly one master, and review IDs are valid |
+| `run_metrics.csv` | run_id, source_file, start/end time, status/failure reason, counts, timings, ... |
+| `evaluation_report.json` | optional quality metrics from comparison with synthetic ground-truth labels |
 
 Console/log summary, e.g.:
 ```

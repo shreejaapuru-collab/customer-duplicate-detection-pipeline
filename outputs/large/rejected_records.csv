@@ -1,501 +1,501 @@
-record_id,reason,raw_name,raw_email,raw_phone
-C000033,missing_name,,parth.puri8264@hotmail.com,9088461308
-C000035,invalid_phone,Dominic Deshmukh,dominic.deshmukh7079@gmail.com,98765
-C000047,invalid_phone,Fitan Seth,fitan.seth4395@gmail.com,abcdefghij
-C000090,missing_name,,damyanti.sarraf6852@yahoo.com,7021622236
-C000176,invalid_phone,Zayan De,zayan.de3889@outlook.com,12345
-C000187,invalid_phone,Andrew Rajagopalan,andrew.rajagopalan6371@hotmail.com,98765
-C000189,missing_name,,pavani.parmar7694@gmail.com,9877484754
-C000241,invalid_phone,Ethan Rastogi,ethan.rastogi8294@outlook.com,00000
-C000286,missing_email,Parth Sarkar,,8358329267
-C000303,missing_email,Guneet Om,,8359135998
-C000326,missing_name,,yashawini.biswas7029@outlook.com,7684101492
-C000352,missing_email,Avni Bedi,,8523905725
-C000385,missing_email,Bishakha Mane,,9843827005
-C000393,invalid_phone,Pranav Saha,pranav.saha1157@gmail.com,abcdefghij
-C000399,invalid_phone,Waida Seshadri,waida.seshadri2050@hotmail.com,12345
-C000403,missing_email,Sneha Kale,,7742046921
-C000412,invalid_phone,Chandresh Jain,chandresh.jain1485@hotmail.com,98765
-C000422,missing_email,Farhan Bora,,9506997717
-C000439,missing_name,,ronith.joshi9798@yahoo.com,8681355627
-C000455,missing_name,,vasudha.mani1276@outlook.com,7541446346
-C000497,invalid_phone,Indira Chawla,indira.chawla31@outlook.com,abcdefghij
-C000516,missing_email,Timothy Kurian,,8037127015
-C000538,missing_name,,hamsini.basu1293@hotmail.com,6411498019
-C000582,missing_email,Tanay Wable,,8972331592
-C000618,missing_name,,praneel.bobal3054@outlook.com,9565986825
-C000619,missing_email,Gaurika Sengupta,,7321575931
-C000642,invalid_phone,Siddharth Ganguly,siddharth.ganguly8031@outlook.com,00000
-C000677,missing_email,Michael Bal,,9263823426
-C000679,missing_name,,ati.bandi3276@gmail.com,7623631964
-C000688,missing_name,,udarsh.mann7847@outlook.com,6227729005
-C000731,missing_email,Andrew Thaman,,7034264950
-C000733,missing_email,Mohini Sani,,7071183160
-C000735,invalid_phone,Ekiya Narayan,ekiya.narayan9903@yahoo.com,98765
-C000748,missing_name,,kalpit.panchal3845@outlook.com,6904642372
-C000796,missing_email,Avni Bhattacharyya,,8749626021
-C000800,missing_name,,nimrat.sehgal3429@hotmail.com,7067413586
-C000805,invalid_phone,Robert Ghosh,robert.ghosh5632@outlook.com,12345
-C000822,missing_email,Chasmum Bedi,,8894371406
-C000852,missing_email,Rajeshri Chakraborty,,8865154963
-C000876,missing_email,Chandani Karpe,,9227132722
-C000887,missing_name,,jonathan.mammen6761@yahoo.com,6424138659
-C000888,missing_email,Harshil Ghose,,8564754532
-C000911,invalid_phone,Ikbal Walla,ikbal.walla2128@outlook.com,abcdefghij
-C000916,missing_name,,fariq.parikh3111@hotmail.com,7401434710
-C000917,missing_name,,farhan.raval6974@hotmail.com,8899694684
-C000922,missing_email,Yashasvi Goda,,7092762951
-C000931,missing_email,Radha Sachdeva,,7821840067
-C000966,invalid_phone,Laksh Sarma,laksh.sarma2386@hotmail.com,12345
-C000998,invalid_phone,Netra Rai,netra.rai4916@yahoo.com,12345
-C000999,invalid_phone,Abha Chander,abha.chander2500@outlook.com,00000
-C001035,missing_name,,vrishti.samra1392@yahoo.com,7254510062
-C001039,missing_email,Joshua Nanda,,9566135227
-C001056,invalid_phone,Warjas Malhotra,warjas.malhotra2248@yahoo.com,12345
-C001073,missing_email,Omaja Uppal,,6320064372
-C001117,missing_name,,chakrika.johal4360@gmail.com,7752349377
-C001194,invalid_phone,Ayush Amble,ayush.amble8588@gmail.com,abcdefghij
-C001227,missing_email,Ishani Chana,,6831164202
-C001240,missing_email,Chasmum Gola,,6713255227
-C001249,missing_name,,prisha.bhattacharyya4211@outlook.com,6230563429
-C001270,missing_name,,chandresh.parmer3061@outlook.com,8797458598
-C001311,missing_name,,amaira.srivastava1241@gmail.com,6225432094
-C001317,missing_name,,devika.kunda206@gmail.com,8367389862
-C001341,invalid_phone,Unni Sabharwal,unni.sabharwal5860@outlook.com,abcdefghij
-C001360,invalid_phone,Jeevika Hari,jeevika.hari8281@hotmail.com,00000
-C001367,invalid_phone,Ranveer Peri,ranveer.peri3721@yahoo.com,98765
-C001381,missing_name,,orinder.pai7143@outlook.com,7251576040
-C001390,missing_name,,urvi.pandey7831@outlook.com,7154810708
-C001429,missing_name,,yashawini.soni6844@hotmail.com,9497906580
-C001452,invalid_phone,Yagnesh Ramaswamy,yagnesh.ramaswamy658@hotmail.com,00000
-C001494,invalid_phone,Faris Goda,faris.goda9527@hotmail.com,00000
-C001508,missing_email,Jeevika Sarraf,,6275369034
-C001514,missing_name,,deepa.rajagopal211@hotmail.com,8045191081
-C001515,missing_name,,yashica.kulkarni9710@outlook.com,7717470790
-C001516,missing_name,,darpan.bahl5735@gmail.com,6482267125
-C001541,missing_name,,krisha.gole7828@hotmail.com,9224748062
-C001579,missing_name,,darika.gole3454@hotmail.com,8755969158
-C001622,missing_email,Jairaj Baral,,7054179075
-C001631,missing_email,Forum Deo,,9754095356
-C001681,missing_name,,yochana.naik1627@outlook.com,8958870823
-C001685,missing_email,Jeet Dasgupta,,9880767073
-C001767,missing_email,Darpan Pai,,7610558600
-C001789,missing_email,Pranav Boase,,6376859046
-C001790,missing_email,Eiravati Purohit,,7680082606
-C001797,invalid_phone,Yatan Khatri,yatan.khatri6761@outlook.com,abcdefghij
-C001798,missing_email,Zehaan Rajan,,7963282154
-C001805,invalid_phone,Janani Dara,janani.dara4497@hotmail.com,12345
-C001823,invalid_phone,Xalak Wali,xalak.wali246@outlook.com,12345
-C001826,missing_name,,utkarsh.parsa446@outlook.com,7186083148
-C001829,missing_email,Ikshita Dewan,,6536491829
-C001847,missing_email,Krishna Joshi,,8729829949
-C001877,invalid_phone,Zarna Balay,zarna.balay5505@gmail.com,abcdefghij
-C001897,missing_name,,sai.wali1554@outlook.com,9133649975
-C001969,missing_name,,george.naidu6298@hotmail.com,8801543496
-C001999,missing_name,,raghav.tripathi1987@hotmail.com,6386789845
-C002013,missing_name,,nilima.bajaj7056@gmail.com,6185543745
-C002030,missing_name,,vrishti.rai2210@hotmail.com,8451117001
-C002049,invalid_phone,Wazir Sant,wazir.sant3286@hotmail.com,abcdefghij
-C002065,missing_name,,bishakha.dhar5080@gmail.com,6234757259
-C002071,invalid_phone,Samar Singh,samar.singh7732@gmail.com,abcdefghij
-C002091,missing_name,,praneel.bal5165@yahoo.com,8264610925
-C002100,missing_name,,balhaar.bansal4356@outlook.com,8011420338
-C002135,missing_name,,yashodhara.bahl7521@outlook.com,6812732892
-C002140,missing_name,,advay.sidhu8997@yahoo.com,7465677727
-C002151,missing_email,Yashodhara Comar,,9202018459
-C002154,missing_name,,leena.sahota2242@hotmail.com,6819918548
-C002182,invalid_phone,Agastya Patil,agastya.patil3018@hotmail.com,abcdefghij
-C002189,invalid_phone,Balvan Sampath,balvan.sampath7300@yahoo.com,12345
-C002197,invalid_phone,Arya Gupta,arya.gupta8105@hotmail.com,00000
-C002310,missing_name,,hiral.chaudry6255@yahoo.com,7832137649
-C002343,invalid_phone,Ekapad Bhatti,ekapad.bhatti3755@outlook.com,98765
-C002370,missing_name,,simon.mand4793@outlook.com,8685122695
-C002387,invalid_phone,Aishani Prakash,aishani.prakash4527@hotmail.com,98765
-C002415,invalid_phone,Amol Sami,amol.sami4129@gmail.com,abcdefghij
-C002419,missing_email,Amrita Kohli,,6179504016
-C002429,missing_email,Waida Deol,,7446697307
-C002432,invalid_phone,Girik Saraf,girik.saraf267@yahoo.com,98765
-C002489,invalid_phone,Mitali Deshpande,mitali.deshpande9827@gmail.com,abcdefghij
-C002499,invalid_phone,Theodore Barad,theodore.barad6761@yahoo.com,00000
-C002506,missing_name,,oscar.dave2009@outlook.com,9434311478
-C002545,invalid_phone,Qabil Madan,qabil.madan5191@yahoo.com,abcdefghij
-C002565,invalid_phone,Vaishnavi Tiwari,vaishnavi.tiwari6845@yahoo.com,98765
-C002580,missing_name,,aishani.gera5598@yahoo.com,7073483126
-C002590,missing_email,Baghyawati Varkey,,9825871702
-C002633,invalid_phone,Rachita Karnik,rachita.karnik6014@outlook.com,abcdefghij
-C002666,missing_email,Oni Mangal,,8728754721
-C002688,missing_name,,atharv.srinivasan7112@gmail.com,7202677622
-C002692,invalid_phone,Hemal Comar,hemal.comar6057@yahoo.com,00000
-C002705,missing_email,Bhavika Varty,,8103250274
-C002724,invalid_phone,Yatin Patil,yatin.patil5284@yahoo.com,00000
-C002737,missing_name,,jeremiah.mani7036@outlook.com,8647228722
-C002745,invalid_phone,Lipika Prasad,lipika.prasad6372@yahoo.com,12345
-C002769,missing_name,,agastya.ravi2279@yahoo.com,7437442956
-C002793,missing_name,,irya.nath7024@gmail.com,7336290241
-C002846,missing_email,Shaurya Shanker,,6511829535
-C002863,missing_name,,vasudha.naidu3816@hotmail.com,6355494166
-C002905,missing_email,Bhavya Krish,,6478597899
-C002909,missing_email,Libni Bhat,,6381671033
-C002931,invalid_phone,Janya Krishna,janya.krishna8820@outlook.com,98765
-C002957,missing_email,Eta Patel,,7291984733
-C002965,missing_email,Gabriel Rout,,7935418953
-C002979,missing_email,Adya Jani,,8388914186
-C002984,missing_email,Ethan Balay,,8007243290
-C002996,missing_email,Balendra Gera,,8338960699
-C003047,missing_email,Chatura Dasgupta,,6180792973
-C003058,missing_email,Victor Narang,,9197410056
-C003073,invalid_phone,Balendra Master,balendra.master9083@hotmail.com,abcdefghij
-C003083,missing_name,,nakul.bir7907@hotmail.com,8997246847
-C003089,missing_email,Lekha Modi,,9770760717
-C003108,invalid_phone,Januja Menon,januja.menon6639@hotmail.com,98765
-C003172,invalid_phone,Pushti Om,pushti.om8740@hotmail.com,00000
-C003179,missing_name,,tanish.bora3242@yahoo.com,7197548466
-C003182,missing_name,,onkar.korpal584@yahoo.com,6869995971
-C003199,invalid_phone,Kiaan Pandya,kiaan.pandya9891@hotmail.com,00000
-C003219,missing_email,Bhavya Barad,,9204282400
-C003222,missing_email,Parth Sem,,7012324756
-C003238,missing_name,,ira.pandya4272@gmail.com,9938485325
-C003245,missing_name,,leela.divan5228@gmail.com,7457547923
-C003287,missing_name,,sai.sharma4815@yahoo.com,7099651001
-C003293,missing_name,,sneha.dugal8333@outlook.com,6239900430
-C003324,missing_email,Hitesh Narasimhan,,6354330156
-C003343,missing_name,,aashi.sunder7800@hotmail.com,8862326082
-C003348,missing_email,Atharv Walla,,9360448159
-C003355,invalid_phone,Aashi Kannan,aashi.kannan3709@gmail.com,12345
-C003375,missing_email,Prisha Bhandari,,7844417392
-C003379,missing_name,,shaurya.varghese7295@hotmail.com,8545403891
-C003388,missing_name,,tanvi.kumer2136@gmail.com,9369000152
-C003434,invalid_phone,Samarth Swaminathan,samarth.swaminathan2323@hotmail.com,abcdefghij
-C003448,missing_name,,tripti.sama535@yahoo.com,9207897846
-C003516,invalid_phone,Vasana Radhakrishnan,vasana.radhakrishnan5549@hotmail.com,00000
-C003534,invalid_phone,Oliver Bakshi,oliver.bakshi9324@outlook.com,00000
-C003542,invalid_phone,Thomas Shenoy,thomas.shenoy4965@yahoo.com,abcdefghij
-C003565,missing_name,,omya.konda4749@yahoo.com,8609653669
-C003569,missing_name,,madhav.thaker1922@outlook.com,6827769574
-C003576,missing_email,Urvashi Golla,,6448086595
-C003624,invalid_phone,Lucky Vasa,lucky.vasa3726@outlook.com,98765
-C003650,missing_email,Advik Dutt,,9316511637
-C003657,invalid_phone,Frado Bandi,frado.bandi9051@yahoo.com,12345
-C003662,missing_email,Yahvi Nagi,,6785523352
-C003735,missing_name,,zashil.dutta1783@yahoo.com,7286719168
-C003754,missing_name,,sai.comar3804@hotmail.com,9869872579
-C003759,invalid_phone,Rachana Shere,rachana.shere9340@yahoo.com,00000
-C003811,missing_email,Nisha Sathe,,6844118582
-C003824,missing_email,Sai Agrawal,,7541003507
-C003841,invalid_phone,Peter Kulkarni,peter.kulkarni6140@gmail.com,00000
-C003858,missing_email,Ati Bera,,6632020242
-C003863,missing_email,Abhiram Sem,,9322643715
-C003889,missing_email,Wriddhish Nadig,,9845336045
-C003909,invalid_phone,Warhi Dube,warhi.dube8126@yahoo.com,12345
-C003922,missing_name,,bhavna.shah1719@outlook.com,8875397309
-C003929,invalid_phone,Nirja Shetty,nirja.shetty5854@outlook.com,12345
-C003934,missing_name,,wishi.parsa5256@outlook.com,6762832185
-C003993,invalid_phone,Janaki Kata,janaki.kata540@hotmail.com,12345
-C004053,invalid_phone,Upkaar Dar,upkaar.dar9690@hotmail.com,00000
-C004066,invalid_phone,Aryan Sastry,aryan.sastry8219@yahoo.com,00000
-C004102,invalid_phone,Netra Bajaj,netra.bajaj899@yahoo.com,12345
-C004117,invalid_phone,Madhav Mann,madhav.mann355@yahoo.com,00000
-C004131,invalid_phone,Hema Kumer,hema.kumer2874@yahoo.com,98765
-C004153,missing_name,,mohini.bajaj2255@outlook.com,8623492745
-C004193,invalid_phone,Chatura Bawa,chatura.bawa8715@yahoo.com,12345
-C004256,invalid_phone,Keya Nagy,keya.nagy952@yahoo.com,abcdefghij
-C004288,missing_email,Niharika Luthra,,6629030220
-C004316,missing_email,Rayaan Ghosh,,9022367636
-C004323,missing_name,,ladli.anne8411@outlook.com,9515031414
-C004343,missing_name,,samaksh.baral9324@yahoo.com,7596054222
-C004369,invalid_phone,Nathan Swamy,nathan.swamy7393@outlook.com,12345
-C004386,missing_name,,nathan.mukhopadhyay2035@yahoo.com,9258858077
-C004455,missing_name,,udant.sani2787@gmail.com,8195840414
-C004470,missing_email,Devika Kuruvilla,,6070043078
-C004485,missing_name,,sneha.kothari4962@gmail.com,7651524513
-C004524,missing_email,Anthony Chada,,7615856751
-C004538,invalid_phone,Varsha Sahni,varsha.sahni6546@hotmail.com,00000
-C004566,missing_name,,ridhi.ravel6097@hotmail.com,8706017713
-C004583,missing_email,Tanmayi Kale,,6154647515
-C004630,invalid_phone,Falak Datta,falak.datta7023@gmail.com,98765
-C004640,missing_name,,ekani.hora6013@hotmail.com,9426599149
-C004642,missing_name,,saanvi.tara2921@hotmail.com,7913910190
-C004700,missing_name,,tanish.samra9801@outlook.com,7789041577
-C004734,missing_email,Jack Buch,,9741405343
-C004735,missing_name,,nimrat.ahluwalia5320@outlook.com,7537490532
-C004756,missing_name,,jhalak.misra7150@yahoo.com,8423210192
-C004765,missing_name,,kai.maharaj4379@yahoo.com,8866525988
-C004776,missing_email,Ayaan Dyal,,8888266353
-C004791,missing_name,,netra.bahri9292@hotmail.com,8946521173
-C004795,missing_email,Neelima Prabhakar,,8890595228
-C004807,missing_name,,abeer.karan3182@yahoo.com,9436718164
-C004810,missing_name,,lavanya.maharaj2079@gmail.com,8492483141
-C004811,missing_email,Azaan Balakrishnan,,6486466398
-C004818,invalid_phone,Yug Sem,yug.sem8373@hotmail.com,12345
-C004823,missing_name,,chandani.varty4389@outlook.com,7528017635
-C004830,invalid_phone,Jatin Balasubramanian,jatin.balasubramanian568@gmail.com,98765
-C004843,missing_email,Omisha Kale,,7588833231
-C004849,missing_name,,abdul.yadav6084@hotmail.com,9069913499
-C004853,missing_email,Megha Bava,,9796471319
-C004885,invalid_phone,Jagdish Varkey,jagdish.varkey2499@yahoo.com,abcdefghij
-C004906,missing_email,Arin Narang,,9375384161
-C004968,missing_email,Praneel Vala,,7600503716
-C004981,missing_name,,harshil.singhal9262@yahoo.com,8246515155
-C004988,missing_email,Radha Krish,,7294938238
-C005005,missing_name,,azad.tandon3031@hotmail.com,9992751902
-C005006,missing_name,,oviya.dalal963@hotmail.com,8362402595
-C005010,missing_email,Ubika Choudhry,,7087052365
-C005068,missing_name,,david.khanna2707@gmail.com,9359470318
-C005074,missing_email,Urishilla Yohannan,,6075837921
-C005088,missing_name,,rudra.bawa1317@yahoo.com,8900401054
-C005093,invalid_phone,Hemangini Sami,hemangini.sami8402@yahoo.com,98765
-C005108,missing_email,Bhavika Raj,,8396238072
-C005142,missing_name,,sanaya.bhattacharyya2072@gmail.com,9479700319
-C005144,missing_name,,daksh.goda2472@gmail.com,8568424663
-C005147,invalid_phone,Garima Khosla,garima.khosla8923@gmail.com,12345
-C005150,missing_name,,oni.murty1203@hotmail.com,9133592582
-C005152,missing_email,Eta Dasgupta,,9428667007
-C005177,invalid_phone,Hemangini Menon,hemangini.menon3290@gmail.com,abcdefghij
-C005223,invalid_phone,Anay Dugar,anay.dugar1267@outlook.com,12345
-C005224,missing_email,Rushil Nazareth,,7003013294
-C005237,missing_email,Daksha Char,,8415395627
-C005269,invalid_phone,Jack Lalla,jack.lalla1054@outlook.com,00000
-C005299,missing_name,,chandani.tiwari2986@outlook.com,6069385771
-C005311,missing_email,Laksh Shetty,,9903985425
-C005315,missing_name,,chavvi.deep1754@yahoo.com,7402244955
-C005365,missing_name,,jai.ratta767@outlook.com,7172331913
-C005366,missing_email,Tejas Dey,,6172937746
-C005370,invalid_phone,Jagrati D’Alia,jagrati.dalia7473@yahoo.com,98765
-C005377,missing_email,Bakhshi Madan,,6194816890
-C005460,missing_name,,alexander.lalla1402@hotmail.com,8058609706
-C005473,missing_email,Oviya Datta,,7911589108
-C005488,missing_name,,yashawini.varty1324@outlook.com,6668464823
-C005539,missing_name,,bhavya.ahuja2090@yahoo.com,6401188315
-C005546,missing_name,,libni.khare4362@hotmail.com,6090110359
-C005565,missing_name,,omya.kohli3740@outlook.com,7114983717
-C005585,missing_email,Gayathri Sehgal,,6269042082
-C005595,missing_name,,ucchal.mahal3952@gmail.com,8887313626
-C005596,missing_name,,unni.borde4720@hotmail.com,9929664759
-C005609,missing_name,,sai.chokshi7448@outlook.com,9342824672
-C005622,missing_name,,tripti.pal5847@hotmail.com,9252742121
-C005642,missing_email,Rushil Saraf,,9869226986
-C005650,missing_email,Champak Jhaveri,,6649188655
-C005653,invalid_phone,Tripti Kala,tripti.kala7825@yahoo.com,00000
-C005664,missing_name,,rayaan.natarajan6105@yahoo.com,7459460916
-C005689,invalid_phone,Bhavika Sampath,bhavika.sampath5563@yahoo.com,00000
-C005720,invalid_phone,Warjas Khanna,warjas.khanna5252@gmail.com,abcdefghij
-C005727,missing_email,Bhavini Comar,,8260170629
-C005737,missing_email,Rachana Anne,,7302213562
-C005746,missing_email,Logan Sankaran,,9132731533
-C005762,missing_email,Vrinda Tailor,,8724059070
-C005790,invalid_phone,Irya Puri,irya.puri2251@gmail.com,00000
-C005814,missing_email,Raagini Palla,,7912657976
-C005842,missing_name,,onveer.bhatia1258@gmail.com,8863357439
-C005850,invalid_phone,Jonathan Raghavan,jonathan.raghavan8011@gmail.com,abcdefghij
-C005853,missing_email,Qasim Aggarwal,,7790967397
-C005860,missing_name,,ekbal.rai9917@hotmail.com,6431863136
-C005936,invalid_phone,Kala Tara,kala.tara8445@outlook.com,98765
-C006054,missing_email,Robert Peri,,7341552754
-C006062,invalid_phone,Lakshmi Arora,lakshmi.arora6481@outlook.com,12345
-C006079,missing_name,,diya.kanda9466@gmail.com,8678986816
-C006087,missing_name,,oni.venkataraman3585@yahoo.com,6800316539
-C006097,missing_name,,omkaar.dora4172@outlook.com,6688190051
-C006100,missing_email,Faras Batra,,9319041272
-C006101,missing_name,,arjun.jha8553@yahoo.com,8162413992
-C006105,invalid_phone,Janani Sethi,janani.sethi2678@hotmail.com,12345
-C006106,missing_name,,devansh.iyengar155@hotmail.com,6817001089
-C006127,missing_name,,krishna.kata4394@hotmail.com,8741768625
-C006132,missing_name,,xiti.more6010@hotmail.com,6237938498
-C006144,missing_name,,liam.goswami5042@hotmail.com,9379159891
-C006192,invalid_phone,Qadim Koshy,qadim.koshy1042@hotmail.com,00000
-C006217,invalid_phone,Nikita Golla,nikita.golla8530@outlook.com,98765
-C006249,invalid_phone,Arjun Shah,arjun.shah2649@outlook.com,abcdefghij
-C006252,invalid_phone,Arjun Hari,arjun.hari2414@outlook.com,98765
-C006290,missing_email,Vedhika Arora,,8606227190
-C006320,invalid_phone,Rushil Dani,rushil.dani6346@hotmail.com,98765
-C006328,missing_name,,oscar.boase647@hotmail.com,6887821355
-C006372,missing_email,Aradhana Puri,,6916595369
-C006416,invalid_phone,David Bir,david.bir6778@gmail.com,abcdefghij
-C006422,invalid_phone,Advay Kata,advay.kata4962@hotmail.com,12345
-C006434,missing_name,,tamanna.nagar7944@gmail.com,8836155049
-C006435,invalid_phone,Damyanti Garde,damyanti.garde243@gmail.com,98765
-C006441,missing_name,,zinal.kaur8977@gmail.com,7537893236
-C006463,invalid_phone,Neelima Seshadri,neelima.seshadri5417@gmail.com,12345
-C006465,missing_email,Chaitaly Devi,,7011711734
-C006466,invalid_phone,Fariq Chandra,fariq.chandra2266@yahoo.com,00000
-C006485,invalid_phone,Qadim Lall,qadim.lall4821@outlook.com,12345
-C006487,missing_name,,wazir.mahajan733@outlook.com,9772825911
-C006493,missing_email,Henry Tata,,8866805164
-C006494,missing_name,,ishwar.mann8262@yahoo.com,9070693750
-C006508,missing_email,Vanya Narang,,8365448960
-C006566,missing_name,,zayyan.dass2981@outlook.com,9549786851
-C006611,missing_name,,januja.sama241@outlook.com,6663066605
-C006614,invalid_phone,Noah Sarna,noah.sarna3144@gmail.com,12345
-C006652,invalid_phone,Yuvraj Nagar,yuvraj.nagar1646@yahoo.com,abcdefghij
-C006681,missing_email,Dipta Kapoor,,7968349077
-C006683,missing_name,,balvan.patil3693@outlook.com,8438752979
-C006727,missing_email,Ayushman Sahota,,7136860967
-C006746,invalid_phone,Gabriel Kade,gabriel.kade8040@gmail.com,12345
-C006760,missing_email,Ishanvi Ratti,,8003290720
-C006764,missing_name,,inaya.venkatesh805@outlook.com,7571395760
-C006776,invalid_phone,Chakrika Kala,chakrika.kala8202@yahoo.com,00000
-C006804,missing_name,,ijaya.grewal6902@outlook.com,8687437811
-C006862,missing_name,,chakradhar.mani4356@gmail.com,9207257275
-C006887,missing_email,Odika Narayan,,6014221188
-C006893,invalid_phone,Shivansh Saran,shivansh.saran4053@gmail.com,abcdefghij
-C006933,missing_name,,ekanta.sangha1461@gmail.com,8443461522
-C006948,missing_email,Daksh Krishnamurthy,,8671366818
-C006978,missing_email,Idika Khosla,,6741857791
-C006989,invalid_phone,Krishna Naidu,krishna.naidu5665@yahoo.com,abcdefghij
-C006995,invalid_phone,Amara Varughese,amara.varughese9040@gmail.com,98765
-C006997,missing_email,Ekalinga Mannan,,8422816229
-C007016,missing_email,Pavani Puri,,7162532031
-C007017,missing_name,,dominic.borah2671@outlook.com,9846291826
-C007025,invalid_phone,Upkaar Krishnan,upkaar.krishnan3816@hotmail.com,12345
-C007046,missing_email,Irya Rattan,,8728669553
-C007054,missing_name,,vasudha.swamy1495@hotmail.com,6038762028
-C007066,missing_name,,adweta.som2301@hotmail.com,7301377917
-C007151,invalid_phone,Vyanjana Mutti,vyanjana.mutti272@gmail.com,98765
-C007174,missing_name,,samar.prasad4633@hotmail.com,9901385404
-C007182,invalid_phone,Rachit Patel,rachit.patel4811@outlook.com,12345
-C007197,invalid_phone,Janaki Char,janaki.char7437@yahoo.com,98765
-C007219,missing_name,,jason.shah4772@yahoo.com,8575268065
-C007226,missing_name,,varsha.palla3729@outlook.com,6073035277
-C007241,invalid_phone,Adweta Puri,adweta.puri8628@gmail.com,abcdefghij
-C007309,missing_email,Vamakshi Kurian,,9129514818
-C007341,invalid_phone,Ayush Deep,ayush.deep1946@outlook.com,abcdefghij
-C007345,missing_email,Eiravati Mistry,,8276423752
-C007356,missing_email,Viraj Narayanan,,7701161633
-C007363,missing_name,,gaurangi.pall7489@outlook.com,6256375995
-C007368,missing_name,,gopal.grewal3278@hotmail.com,7665061257
-C007421,invalid_phone,Bishakha Tailor,bishakha.tailor406@hotmail.com,12345
-C007501,missing_email,Hardik Saini,,9979982018
-C007542,missing_name,,yagnesh.rama5083@outlook.com,6986082676
-C007565,invalid_phone,Guneet Rajagopalan,guneet.rajagopalan7351@gmail.com,12345
-C007574,missing_name,,pratyush.mangal7265@hotmail.com,8085289565
-C007622,invalid_phone,Rushil Suri,rushil.suri8183@hotmail.com,12345
-C007627,invalid_phone,Max Dasgupta,max.dasgupta2225@hotmail.com,abcdefghij
-C007643,missing_name,,unni.bandi3135@yahoo.com,7426002009
-C007670,missing_email,Anirudh Dua,,6493928371
-C007676,invalid_phone,Janaki Prashad,janaki.prashad5056@yahoo.com,00000
-C007688,missing_name,,nicholas.kashyap7047@gmail.com,9192168974
-C007721,invalid_phone,Vasana Grewal,vasana.grewal3796@outlook.com,98765
-C007734,missing_email,Mohini Jayaraman,,6139138898
-C007740,invalid_phone,Faris Batta,faris.batta9835@hotmail.com,12345
-C007752,invalid_phone,Lavanya Sen,lavanya.sen1405@outlook.com,12345
-C007775,missing_email,Dipta Choudhury,,6514392700
-C007794,invalid_phone,Maya Sagar,maya.sagar160@gmail.com,00000
-C007800,missing_name,,robert.tailor6701@hotmail.com,7524789297
-C007812,missing_name,,sarthak.nadkarni2482@hotmail.com,6264673060
-C007830,invalid_phone,Zehaan Sane,zehaan.sane3965@hotmail.com,00000
-C007888,invalid_phone,Lopa Mishra,lopa.mishra2516@gmail.com,12345
-C007900,invalid_phone,Patrick Golla,patrick.golla3019@hotmail.com,12345
-C007936,missing_name,,jyoti.khanna2431@hotmail.com,6428815470
-C007953,missing_name,,triya.desai5756@hotmail.com,9716955129
-C007964,missing_name,,patrick.cherian7765@yahoo.com,6503844956
-C007971,invalid_phone,Ayaan Basu,ayaan.basu3938@yahoo.com,00000
-C008012,missing_email,Luke Mistry,,9613397751
-C008030,missing_email,Ayush Zachariah,,8619357548
-C008040,invalid_phone,Shaurya Devan,shaurya.devan6812@gmail.com,98765
-C008053,missing_email,Viraj Sood,,9029550556
-C008062,missing_email,Bahadurjit Prakash,,9316525680
-C008068,missing_email,Charan Chhabra,,9147172612
-C008085,missing_name,,rohan.gour5606@yahoo.com,9086580256
-C008097,missing_email,Manya Dora,,8988828612
-C008109,missing_email,Zashil Varma,,8579566303
-C008127,missing_email,Hemani Soni,,8912166809
-C008133,missing_email,Tejas Dhawan,,6341325512
-C008221,invalid_phone,Advay Sur,advay.sur8004@outlook.com,12345
-C008225,missing_name,,arya.sem5733@gmail.com,6739342385
-C008243,invalid_phone,Daksh Karnik,daksh.karnik1343@outlook.com,12345
-C008251,missing_email,Jasmit Sahota,,6058798043
-C008278,missing_email,Nandini Edwin,,8506119509
-C008283,invalid_phone,Bachittar Mohanty,bachittar.mohanty9653@outlook.com,12345
-C008286,missing_name,,ekani.atwal9512@outlook.com,8220107919
-C008319,missing_name,,qasim.bora1268@outlook.com,7283571243
-C008338,missing_name,,abhiram.korpal614@hotmail.com,7306485818
-C008377,missing_email,Owen Karnik,,9735953376
-C008448,missing_email,Alexander Bhandari,,8362869995
-C008482,invalid_phone,Liam Ganguly,liam.ganguly8012@yahoo.com,98765
-C008522,missing_email,Gaurav Kumar,,7904168342
-C008526,missing_name,,zansi.cherian901@outlook.com,7263455464
-C008566,invalid_phone,Mitesh Devi,mitesh.devi1437@gmail.com,98765
-C008579,invalid_phone,Aarush Kapur,aarush.kapur3288@gmail.com,00000
-C008580,invalid_phone,Oviya Sabharwal,oviya.sabharwal4810@outlook.com,12345
-C008581,missing_email,Dhriti Borah,,8290487564
-C008582,missing_email,Yashasvi Narayanan,,6710005622
-C008594,missing_email,Owen Mital,,9140690429
-C008595,missing_name,,leena.warrior5261@gmail.com,9776681420
-C008599,missing_email,Kiaan Apte,,9768249480
-C008613,missing_email,Jai Chopra,,6571035319
-C008642,invalid_phone,Prisha Patil,prisha.patil8701@outlook.com,abcdefghij
-C008655,missing_email,Ekiya Salvi,,7512815922
-C008662,missing_name,,kamya.nayar3968@hotmail.com,7231489328
-C008666,missing_email,Isaiah Hari,,6526477630
-C008674,missing_name,,jalsa.kala9292@hotmail.com,9098397448
-C008675,missing_name,,peter.barman8451@outlook.com,7551959472
-C008763,missing_name,,william.vasa7880@gmail.com,7147121030
-C008793,missing_name,,gaurika.more7433@yahoo.com,6705116137
-C008800,invalid_phone,Jack Radhakrishnan,jack.radhakrishnan2179@gmail.com,abcdefghij
-C008826,missing_name,,anvi.rajagopal6536@yahoo.com,7853194913
-C008832,invalid_phone,Mitesh Kalita,mitesh.kalita8672@outlook.com,98765
-C008833,invalid_phone,Lipika Sahota,lipika.sahota5623@hotmail.com,abcdefghij
-C008858,missing_email,Bishakha Bala,,6521362687
-C008867,missing_email,Kashvi Kibe,,9484367465
-C008876,missing_email,Sai Sarkar,,6003575305
-C008880,missing_email,Vansha Ram,,7521764185
-C008906,missing_name,,saumya.palan1560@hotmail.com,8241459223
-C008924,invalid_phone,Sneha Kumar,sneha.kumar4934@gmail.com,abcdefghij
-C008928,missing_name,,ekbal.parsa1819@outlook.com,6486006811
-C008948,missing_name,,udyati.sawhney7834@hotmail.com,6383184322
-C009022,missing_email,Dalaja Sani,,6800687910
-C009062,missing_email,Widisha Modi,,7686064485
-C009075,invalid_phone,Barkha Andra,barkha.andra7891@outlook.com,12345
-C009099,missing_email,Kavya Ray,,8024475023
-C009114,invalid_phone,Ria Patla,ria.patla6030@hotmail.com,12345
-C009130,missing_email,Tanish Bassi,,6396894594
-C009137,invalid_phone,Ekansh Pal,ekansh.pal7735@hotmail.com,abcdefghij
-C009140,missing_email,Nidra Bora,,9672627492
-C009164,missing_name,,oviya.sarin9781@gmail.com,8991946139
-C009200,missing_email,Omisha Sami,,9046902822
-C009274,missing_email,Dayamai Behl,,8393684002
-C009277,invalid_phone,Samarth Chander,samarth.chander890@outlook.com,98765
-C009289,invalid_phone,Widisha Dyal,widisha.dyal3786@outlook.com,12345
-C009297,missing_name,,upasna.ramakrishnan4787@yahoo.com,7266098962
-C009313,missing_name,,falan.chada7169@hotmail.com,6883603142
-C009314,invalid_phone,Tristan Bhagat,tristan.bhagat9437@yahoo.com,12345
-C009324,invalid_phone,Bhanumati Boase,bhanumati.boase2088@hotmail.com,abcdefghij
-C009343,missing_email,Megha Chaudhry,,9703147212
-C009397,invalid_phone,Abeer Rao,abeer.rao8680@yahoo.com,abcdefghij
-C009419,missing_name,,kai.seshadri4421@outlook.com,9351359308
-C009457,missing_name,,sanya.sarna7713@yahoo.com,8828216452
-C009459,invalid_phone,Victor Srinivasan,victor.srinivasan7675@yahoo.com,98765
-C009471,missing_name,,arya.batra9121@gmail.com,8775815968
-C009504,invalid_phone,Veda Menon,veda.menon4584@outlook.com,12345
-C009505,missing_name,,falak.shan1776@outlook.com,7817430595
-C009540,missing_email,Yachana Vig,,6853016894
-C009562,missing_email,Pratyush Kibe,,8919211768
-C009575,missing_name,,krisha.ranganathan7841@hotmail.com,9859409764
-C009577,missing_email,Jyoti Sarin,,7279522558
-C009580,invalid_phone,Jeevika Kashyap,jeevika.kashyap8109@hotmail.com,abcdefghij
-C009583,invalid_phone,Jonathan Bera,jonathan.bera1516@gmail.com,98765
-C009589,missing_email,Farhan Reddy,,6734027249
-C009602,missing_email,Nathan Pillai,,6062649621
-C009604,missing_email,Sudiksha Nadig,,6575012713
-C009626,missing_name,,noah.wason8074@outlook.com,7373810063
-C009634,invalid_phone,Avni Pal,avni.pal4629@hotmail.com,abcdefghij
-C009661,missing_name,,michael.narain4364@yahoo.com,8943821789
-C009669,missing_email,Nidhi Ganguly,,7140897882
-C009680,invalid_phone,Vincent Bawa,vincent.bawa3517@hotmail.com,abcdefghij
-C009717,missing_name,,garima.borde5584@yahoo.com,6882765847
-C009719,missing_name,,ekavir.pandya376@outlook.com,8976770636
-C009720,missing_email,Eta Desai,,7374287241
-C009731,missing_email,Jeet Prakash,,6159086832
-C009737,invalid_phone,Zayan Iyengar,zayan.iyengar4085@hotmail.com,00000
-C009758,invalid_phone,Guneet Mangat,guneet.mangat4025@yahoo.com,98765
-C009788,invalid_phone,Niharika Bandi,niharika.bandi4589@outlook.com,12345
-C009844,missing_name,,yochana.sibal4362@gmail.com,6515124570
-C009859,missing_email,Yatan Cherian,,7257975331
-C009865,missing_email,Sai Choudhary,,7174009059
-C009920,missing_name,,nachiket.narula6533@gmail.com,7286334867
-C009934,invalid_phone,Shravya Raval,shravya.raval3065@yahoo.com,00000
-C009949,missing_email,Liam Oza,,9770941038
-C009967,missing_email,Panini Rana,,8379241423
-C009971,missing_email,Tanvi Varty,,8937020013
-C009995,missing_email,Samarth Gupta,,7097037993
-C009996,missing_name,,liam.parmer359@hotmail.com,8091446466
+record_id,reason,source_file,source_row,run_id,raw_name,raw_email,raw_phone
+C000033,missing_name,customers_10000.csv,34,run_94de4abf48,,parth.puri8264@hotmail.com,9088461308
+C000035,invalid_phone,customers_10000.csv,36,run_94de4abf48,Dominic Deshmukh,dominic.deshmukh7079@gmail.com,98765
+C000047,invalid_phone,customers_10000.csv,48,run_94de4abf48,Fitan Seth,fitan.seth4395@gmail.com,abcdefghij
+C000090,missing_name,customers_10000.csv,91,run_94de4abf48,,damyanti.sarraf6852@yahoo.com,7021622236
+C000176,invalid_phone,customers_10000.csv,177,run_94de4abf48,Zayan De,zayan.de3889@outlook.com,12345
+C000187,invalid_phone,customers_10000.csv,188,run_94de4abf48,Andrew Rajagopalan,andrew.rajagopalan6371@hotmail.com,98765
+C000189,missing_name,customers_10000.csv,190,run_94de4abf48,,pavani.parmar7694@gmail.com,9877484754
+C000241,invalid_phone,customers_10000.csv,242,run_94de4abf48,Ethan Rastogi,ethan.rastogi8294@outlook.com,00000
+C000286,missing_email,customers_10000.csv,287,run_94de4abf48,Parth Sarkar,,8358329267
+C000303,missing_email,customers_10000.csv,304,run_94de4abf48,Guneet Om,,8359135998
+C000326,missing_name,customers_10000.csv,327,run_94de4abf48,,yashawini.biswas7029@outlook.com,7684101492
+C000352,missing_email,customers_10000.csv,353,run_94de4abf48,Avni Bedi,,8523905725
+C000385,missing_email,customers_10000.csv,386,run_94de4abf48,Bishakha Mane,,9843827005
+C000393,invalid_phone,customers_10000.csv,394,run_94de4abf48,Pranav Saha,pranav.saha1157@gmail.com,abcdefghij
+C000399,invalid_phone,customers_10000.csv,400,run_94de4abf48,Waida Seshadri,waida.seshadri2050@hotmail.com,12345
+C000403,missing_email,customers_10000.csv,404,run_94de4abf48,Sneha Kale,,7742046921
+C000412,invalid_phone,customers_10000.csv,413,run_94de4abf48,Chandresh Jain,chandresh.jain1485@hotmail.com,98765
+C000422,missing_email,customers_10000.csv,423,run_94de4abf48,Farhan Bora,,9506997717
+C000439,missing_name,customers_10000.csv,440,run_94de4abf48,,ronith.joshi9798@yahoo.com,8681355627
+C000455,missing_name,customers_10000.csv,456,run_94de4abf48,,vasudha.mani1276@outlook.com,7541446346
+C000497,invalid_phone,customers_10000.csv,498,run_94de4abf48,Indira Chawla,indira.chawla31@outlook.com,abcdefghij
+C000516,missing_email,customers_10000.csv,517,run_94de4abf48,Timothy Kurian,,8037127015
+C000538,missing_name,customers_10000.csv,539,run_94de4abf48,,hamsini.basu1293@hotmail.com,6411498019
+C000582,missing_email,customers_10000.csv,583,run_94de4abf48,Tanay Wable,,8972331592
+C000618,missing_name,customers_10000.csv,619,run_94de4abf48,,praneel.bobal3054@outlook.com,9565986825
+C000619,missing_email,customers_10000.csv,620,run_94de4abf48,Gaurika Sengupta,,7321575931
+C000642,invalid_phone,customers_10000.csv,643,run_94de4abf48,Siddharth Ganguly,siddharth.ganguly8031@outlook.com,00000
+C000677,missing_email,customers_10000.csv,678,run_94de4abf48,Michael Bal,,9263823426
+C000679,missing_name,customers_10000.csv,680,run_94de4abf48,,ati.bandi3276@gmail.com,7623631964
+C000688,missing_name,customers_10000.csv,689,run_94de4abf48,,udarsh.mann7847@outlook.com,6227729005
+C000731,missing_email,customers_10000.csv,732,run_94de4abf48,Andrew Thaman,,7034264950
+C000733,missing_email,customers_10000.csv,734,run_94de4abf48,Mohini Sani,,7071183160
+C000735,invalid_phone,customers_10000.csv,736,run_94de4abf48,Ekiya Narayan,ekiya.narayan9903@yahoo.com,98765
+C000748,missing_name,customers_10000.csv,749,run_94de4abf48,,kalpit.panchal3845@outlook.com,6904642372
+C000796,missing_email,customers_10000.csv,797,run_94de4abf48,Avni Bhattacharyya,,8749626021
+C000800,missing_name,customers_10000.csv,801,run_94de4abf48,,nimrat.sehgal3429@hotmail.com,7067413586
+C000805,invalid_phone,customers_10000.csv,806,run_94de4abf48,Robert Ghosh,robert.ghosh5632@outlook.com,12345
+C000822,missing_email,customers_10000.csv,823,run_94de4abf48,Chasmum Bedi,,8894371406
+C000852,missing_email,customers_10000.csv,853,run_94de4abf48,Rajeshri Chakraborty,,8865154963
+C000876,missing_email,customers_10000.csv,877,run_94de4abf48,Chandani Karpe,,9227132722
+C000887,missing_name,customers_10000.csv,888,run_94de4abf48,,jonathan.mammen6761@yahoo.com,6424138659
+C000888,missing_email,customers_10000.csv,889,run_94de4abf48,Harshil Ghose,,8564754532
+C000911,invalid_phone,customers_10000.csv,912,run_94de4abf48,Ikbal Walla,ikbal.walla2128@outlook.com,abcdefghij
+C000916,missing_name,customers_10000.csv,917,run_94de4abf48,,fariq.parikh3111@hotmail.com,7401434710
+C000917,missing_name,customers_10000.csv,918,run_94de4abf48,,farhan.raval6974@hotmail.com,8899694684
+C000922,missing_email,customers_10000.csv,923,run_94de4abf48,Yashasvi Goda,,7092762951
+C000931,missing_email,customers_10000.csv,932,run_94de4abf48,Radha Sachdeva,,7821840067
+C000966,invalid_phone,customers_10000.csv,967,run_94de4abf48,Laksh Sarma,laksh.sarma2386@hotmail.com,12345
+C000998,invalid_phone,customers_10000.csv,999,run_94de4abf48,Netra Rai,netra.rai4916@yahoo.com,12345
+C000999,invalid_phone,customers_10000.csv,1000,run_94de4abf48,Abha Chander,abha.chander2500@outlook.com,00000
+C001035,missing_name,customers_10000.csv,1036,run_94de4abf48,,vrishti.samra1392@yahoo.com,7254510062
+C001039,missing_email,customers_10000.csv,1040,run_94de4abf48,Joshua Nanda,,9566135227
+C001056,invalid_phone,customers_10000.csv,1057,run_94de4abf48,Warjas Malhotra,warjas.malhotra2248@yahoo.com,12345
+C001073,missing_email,customers_10000.csv,1074,run_94de4abf48,Omaja Uppal,,6320064372
+C001117,missing_name,customers_10000.csv,1118,run_94de4abf48,,chakrika.johal4360@gmail.com,7752349377
+C001194,invalid_phone,customers_10000.csv,1195,run_94de4abf48,Ayush Amble,ayush.amble8588@gmail.com,abcdefghij
+C001227,missing_email,customers_10000.csv,1228,run_94de4abf48,Ishani Chana,,6831164202
+C001240,missing_email,customers_10000.csv,1241,run_94de4abf48,Chasmum Gola,,6713255227
+C001249,missing_name,customers_10000.csv,1250,run_94de4abf48,,prisha.bhattacharyya4211@outlook.com,6230563429
+C001270,missing_name,customers_10000.csv,1271,run_94de4abf48,,chandresh.parmer3061@outlook.com,8797458598
+C001311,missing_name,customers_10000.csv,1312,run_94de4abf48,,amaira.srivastava1241@gmail.com,6225432094
+C001317,missing_name,customers_10000.csv,1318,run_94de4abf48,,devika.kunda206@gmail.com,8367389862
+C001341,invalid_phone,customers_10000.csv,1342,run_94de4abf48,Unni Sabharwal,unni.sabharwal5860@outlook.com,abcdefghij
+C001360,invalid_phone,customers_10000.csv,1361,run_94de4abf48,Jeevika Hari,jeevika.hari8281@hotmail.com,00000
+C001367,invalid_phone,customers_10000.csv,1368,run_94de4abf48,Ranveer Peri,ranveer.peri3721@yahoo.com,98765
+C001381,missing_name,customers_10000.csv,1382,run_94de4abf48,,orinder.pai7143@outlook.com,7251576040
+C001390,missing_name,customers_10000.csv,1391,run_94de4abf48,,urvi.pandey7831@outlook.com,7154810708
+C001429,missing_name,customers_10000.csv,1430,run_94de4abf48,,yashawini.soni6844@hotmail.com,9497906580
+C001452,invalid_phone,customers_10000.csv,1453,run_94de4abf48,Yagnesh Ramaswamy,yagnesh.ramaswamy658@hotmail.com,00000
+C001494,invalid_phone,customers_10000.csv,1495,run_94de4abf48,Faris Goda,faris.goda9527@hotmail.com,00000
+C001508,missing_email,customers_10000.csv,1509,run_94de4abf48,Jeevika Sarraf,,6275369034
+C001514,missing_name,customers_10000.csv,1515,run_94de4abf48,,deepa.rajagopal211@hotmail.com,8045191081
+C001515,missing_name,customers_10000.csv,1516,run_94de4abf48,,yashica.kulkarni9710@outlook.com,7717470790
+C001516,missing_name,customers_10000.csv,1517,run_94de4abf48,,darpan.bahl5735@gmail.com,6482267125
+C001541,missing_name,customers_10000.csv,1542,run_94de4abf48,,krisha.gole7828@hotmail.com,9224748062
+C001579,missing_name,customers_10000.csv,1580,run_94de4abf48,,darika.gole3454@hotmail.com,8755969158
+C001622,missing_email,customers_10000.csv,1623,run_94de4abf48,Jairaj Baral,,7054179075
+C001631,missing_email,customers_10000.csv,1632,run_94de4abf48,Forum Deo,,9754095356
+C001681,missing_name,customers_10000.csv,1682,run_94de4abf48,,yochana.naik1627@outlook.com,8958870823
+C001685,missing_email,customers_10000.csv,1686,run_94de4abf48,Jeet Dasgupta,,9880767073
+C001767,missing_email,customers_10000.csv,1768,run_94de4abf48,Darpan Pai,,7610558600
+C001789,missing_email,customers_10000.csv,1790,run_94de4abf48,Pranav Boase,,6376859046
+C001790,missing_email,customers_10000.csv,1791,run_94de4abf48,Eiravati Purohit,,7680082606
+C001797,invalid_phone,customers_10000.csv,1798,run_94de4abf48,Yatan Khatri,yatan.khatri6761@outlook.com,abcdefghij
+C001798,missing_email,customers_10000.csv,1799,run_94de4abf48,Zehaan Rajan,,7963282154
+C001805,invalid_phone,customers_10000.csv,1806,run_94de4abf48,Janani Dara,janani.dara4497@hotmail.com,12345
+C001823,invalid_phone,customers_10000.csv,1824,run_94de4abf48,Xalak Wali,xalak.wali246@outlook.com,12345
+C001826,missing_name,customers_10000.csv,1827,run_94de4abf48,,utkarsh.parsa446@outlook.com,7186083148
+C001829,missing_email,customers_10000.csv,1830,run_94de4abf48,Ikshita Dewan,,6536491829
+C001847,missing_email,customers_10000.csv,1848,run_94de4abf48,Krishna Joshi,,8729829949
+C001877,invalid_phone,customers_10000.csv,1878,run_94de4abf48,Zarna Balay,zarna.balay5505@gmail.com,abcdefghij
+C001897,missing_name,customers_10000.csv,1898,run_94de4abf48,,sai.wali1554@outlook.com,9133649975
+C001969,missing_name,customers_10000.csv,1970,run_94de4abf48,,george.naidu6298@hotmail.com,8801543496
+C001999,missing_name,customers_10000.csv,2000,run_94de4abf48,,raghav.tripathi1987@hotmail.com,6386789845
+C002013,missing_name,customers_10000.csv,2014,run_94de4abf48,,nilima.bajaj7056@gmail.com,6185543745
+C002030,missing_name,customers_10000.csv,2031,run_94de4abf48,,vrishti.rai2210@hotmail.com,8451117001
+C002049,invalid_phone,customers_10000.csv,2050,run_94de4abf48,Wazir Sant,wazir.sant3286@hotmail.com,abcdefghij
+C002065,missing_name,customers_10000.csv,2066,run_94de4abf48,,bishakha.dhar5080@gmail.com,6234757259
+C002071,invalid_phone,customers_10000.csv,2072,run_94de4abf48,Samar Singh,samar.singh7732@gmail.com,abcdefghij
+C002091,missing_name,customers_10000.csv,2092,run_94de4abf48,,praneel.bal5165@yahoo.com,8264610925
+C002100,missing_name,customers_10000.csv,2101,run_94de4abf48,,balhaar.bansal4356@outlook.com,8011420338
+C002135,missing_name,customers_10000.csv,2136,run_94de4abf48,,yashodhara.bahl7521@outlook.com,6812732892
+C002140,missing_name,customers_10000.csv,2141,run_94de4abf48,,advay.sidhu8997@yahoo.com,7465677727
+C002151,missing_email,customers_10000.csv,2152,run_94de4abf48,Yashodhara Comar,,9202018459
+C002154,missing_name,customers_10000.csv,2155,run_94de4abf48,,leena.sahota2242@hotmail.com,6819918548
+C002182,invalid_phone,customers_10000.csv,2183,run_94de4abf48,Agastya Patil,agastya.patil3018@hotmail.com,abcdefghij
+C002189,invalid_phone,customers_10000.csv,2190,run_94de4abf48,Balvan Sampath,balvan.sampath7300@yahoo.com,12345
+C002197,invalid_phone,customers_10000.csv,2198,run_94de4abf48,Arya Gupta,arya.gupta8105@hotmail.com,00000
+C002310,missing_name,customers_10000.csv,2311,run_94de4abf48,,hiral.chaudry6255@yahoo.com,7832137649
+C002343,invalid_phone,customers_10000.csv,2344,run_94de4abf48,Ekapad Bhatti,ekapad.bhatti3755@outlook.com,98765
+C002370,missing_name,customers_10000.csv,2371,run_94de4abf48,,simon.mand4793@outlook.com,8685122695
+C002387,invalid_phone,customers_10000.csv,2388,run_94de4abf48,Aishani Prakash,aishani.prakash4527@hotmail.com,98765
+C002415,invalid_phone,customers_10000.csv,2416,run_94de4abf48,Amol Sami,amol.sami4129@gmail.com,abcdefghij
+C002419,missing_email,customers_10000.csv,2420,run_94de4abf48,Amrita Kohli,,6179504016
+C002429,missing_email,customers_10000.csv,2430,run_94de4abf48,Waida Deol,,7446697307
+C002432,invalid_phone,customers_10000.csv,2433,run_94de4abf48,Girik Saraf,girik.saraf267@yahoo.com,98765
+C002489,invalid_phone,customers_10000.csv,2490,run_94de4abf48,Mitali Deshpande,mitali.deshpande9827@gmail.com,abcdefghij
+C002499,invalid_phone,customers_10000.csv,2500,run_94de4abf48,Theodore Barad,theodore.barad6761@yahoo.com,00000
+C002506,missing_name,customers_10000.csv,2507,run_94de4abf48,,oscar.dave2009@outlook.com,9434311478
+C002545,invalid_phone,customers_10000.csv,2546,run_94de4abf48,Qabil Madan,qabil.madan5191@yahoo.com,abcdefghij
+C002565,invalid_phone,customers_10000.csv,2566,run_94de4abf48,Vaishnavi Tiwari,vaishnavi.tiwari6845@yahoo.com,98765
+C002580,missing_name,customers_10000.csv,2581,run_94de4abf48,,aishani.gera5598@yahoo.com,7073483126
+C002590,missing_email,customers_10000.csv,2591,run_94de4abf48,Baghyawati Varkey,,9825871702
+C002633,invalid_phone,customers_10000.csv,2634,run_94de4abf48,Rachita Karnik,rachita.karnik6014@outlook.com,abcdefghij
+C002666,missing_email,customers_10000.csv,2667,run_94de4abf48,Oni Mangal,,8728754721
+C002688,missing_name,customers_10000.csv,2689,run_94de4abf48,,atharv.srinivasan7112@gmail.com,7202677622
+C002692,invalid_phone,customers_10000.csv,2693,run_94de4abf48,Hemal Comar,hemal.comar6057@yahoo.com,00000
+C002705,missing_email,customers_10000.csv,2706,run_94de4abf48,Bhavika Varty,,8103250274
+C002724,invalid_phone,customers_10000.csv,2725,run_94de4abf48,Yatin Patil,yatin.patil5284@yahoo.com,00000
+C002737,missing_name,customers_10000.csv,2738,run_94de4abf48,,jeremiah.mani7036@outlook.com,8647228722
+C002745,invalid_phone,customers_10000.csv,2746,run_94de4abf48,Lipika Prasad,lipika.prasad6372@yahoo.com,12345
+C002769,missing_name,customers_10000.csv,2770,run_94de4abf48,,agastya.ravi2279@yahoo.com,7437442956
+C002793,missing_name,customers_10000.csv,2794,run_94de4abf48,,irya.nath7024@gmail.com,7336290241
+C002846,missing_email,customers_10000.csv,2847,run_94de4abf48,Shaurya Shanker,,6511829535
+C002863,missing_name,customers_10000.csv,2864,run_94de4abf48,,vasudha.naidu3816@hotmail.com,6355494166
+C002905,missing_email,customers_10000.csv,2906,run_94de4abf48,Bhavya Krish,,6478597899
+C002909,missing_email,customers_10000.csv,2910,run_94de4abf48,Libni Bhat,,6381671033
+C002931,invalid_phone,customers_10000.csv,2932,run_94de4abf48,Janya Krishna,janya.krishna8820@outlook.com,98765
+C002957,missing_email,customers_10000.csv,2958,run_94de4abf48,Eta Patel,,7291984733
+C002965,missing_email,customers_10000.csv,2966,run_94de4abf48,Gabriel Rout,,7935418953
+C002979,missing_email,customers_10000.csv,2980,run_94de4abf48,Adya Jani,,8388914186
+C002984,missing_email,customers_10000.csv,2985,run_94de4abf48,Ethan Balay,,8007243290
+C002996,missing_email,customers_10000.csv,2997,run_94de4abf48,Balendra Gera,,8338960699
+C003047,missing_email,customers_10000.csv,3048,run_94de4abf48,Chatura Dasgupta,,6180792973
+C003058,missing_email,customers_10000.csv,3059,run_94de4abf48,Victor Narang,,9197410056
+C003073,invalid_phone,customers_10000.csv,3074,run_94de4abf48,Balendra Master,balendra.master9083@hotmail.com,abcdefghij
+C003083,missing_name,customers_10000.csv,3084,run_94de4abf48,,nakul.bir7907@hotmail.com,8997246847
+C003089,missing_email,customers_10000.csv,3090,run_94de4abf48,Lekha Modi,,9770760717
+C003108,invalid_phone,customers_10000.csv,3109,run_94de4abf48,Januja Menon,januja.menon6639@hotmail.com,98765
+C003172,invalid_phone,customers_10000.csv,3173,run_94de4abf48,Pushti Om,pushti.om8740@hotmail.com,00000
+C003179,missing_name,customers_10000.csv,3180,run_94de4abf48,,tanish.bora3242@yahoo.com,7197548466
+C003182,missing_name,customers_10000.csv,3183,run_94de4abf48,,onkar.korpal584@yahoo.com,6869995971
+C003199,invalid_phone,customers_10000.csv,3200,run_94de4abf48,Kiaan Pandya,kiaan.pandya9891@hotmail.com,00000
+C003219,missing_email,customers_10000.csv,3220,run_94de4abf48,Bhavya Barad,,9204282400
+C003222,missing_email,customers_10000.csv,3223,run_94de4abf48,Parth Sem,,7012324756
+C003238,missing_name,customers_10000.csv,3239,run_94de4abf48,,ira.pandya4272@gmail.com,9938485325
+C003245,missing_name,customers_10000.csv,3246,run_94de4abf48,,leela.divan5228@gmail.com,7457547923
+C003287,missing_name,customers_10000.csv,3288,run_94de4abf48,,sai.sharma4815@yahoo.com,7099651001
+C003293,missing_name,customers_10000.csv,3294,run_94de4abf48,,sneha.dugal8333@outlook.com,6239900430
+C003324,missing_email,customers_10000.csv,3325,run_94de4abf48,Hitesh Narasimhan,,6354330156
+C003343,missing_name,customers_10000.csv,3344,run_94de4abf48,,aashi.sunder7800@hotmail.com,8862326082
+C003348,missing_email,customers_10000.csv,3349,run_94de4abf48,Atharv Walla,,9360448159
+C003355,invalid_phone,customers_10000.csv,3356,run_94de4abf48,Aashi Kannan,aashi.kannan3709@gmail.com,12345
+C003375,missing_email,customers_10000.csv,3376,run_94de4abf48,Prisha Bhandari,,7844417392
+C003379,missing_name,customers_10000.csv,3380,run_94de4abf48,,shaurya.varghese7295@hotmail.com,8545403891
+C003388,missing_name,customers_10000.csv,3389,run_94de4abf48,,tanvi.kumer2136@gmail.com,9369000152
+C003434,invalid_phone,customers_10000.csv,3435,run_94de4abf48,Samarth Swaminathan,samarth.swaminathan2323@hotmail.com,abcdefghij
+C003448,missing_name,customers_10000.csv,3449,run_94de4abf48,,tripti.sama535@yahoo.com,9207897846
+C003516,invalid_phone,customers_10000.csv,3517,run_94de4abf48,Vasana Radhakrishnan,vasana.radhakrishnan5549@hotmail.com,00000
+C003534,invalid_phone,customers_10000.csv,3535,run_94de4abf48,Oliver Bakshi,oliver.bakshi9324@outlook.com,00000
+C003542,invalid_phone,customers_10000.csv,3543,run_94de4abf48,Thomas Shenoy,thomas.shenoy4965@yahoo.com,abcdefghij
+C003565,missing_name,customers_10000.csv,3566,run_94de4abf48,,omya.konda4749@yahoo.com,8609653669
+C003569,missing_name,customers_10000.csv,3570,run_94de4abf48,,madhav.thaker1922@outlook.com,6827769574
+C003576,missing_email,customers_10000.csv,3577,run_94de4abf48,Urvashi Golla,,6448086595
+C003624,invalid_phone,customers_10000.csv,3625,run_94de4abf48,Lucky Vasa,lucky.vasa3726@outlook.com,98765
+C003650,missing_email,customers_10000.csv,3651,run_94de4abf48,Advik Dutt,,9316511637
+C003657,invalid_phone,customers_10000.csv,3658,run_94de4abf48,Frado Bandi,frado.bandi9051@yahoo.com,12345
+C003662,missing_email,customers_10000.csv,3663,run_94de4abf48,Yahvi Nagi,,6785523352
+C003735,missing_name,customers_10000.csv,3736,run_94de4abf48,,zashil.dutta1783@yahoo.com,7286719168
+C003754,missing_name,customers_10000.csv,3755,run_94de4abf48,,sai.comar3804@hotmail.com,9869872579
+C003759,invalid_phone,customers_10000.csv,3760,run_94de4abf48,Rachana Shere,rachana.shere9340@yahoo.com,00000
+C003811,missing_email,customers_10000.csv,3812,run_94de4abf48,Nisha Sathe,,6844118582
+C003824,missing_email,customers_10000.csv,3825,run_94de4abf48,Sai Agrawal,,7541003507
+C003841,invalid_phone,customers_10000.csv,3842,run_94de4abf48,Peter Kulkarni,peter.kulkarni6140@gmail.com,00000
+C003858,missing_email,customers_10000.csv,3859,run_94de4abf48,Ati Bera,,6632020242
+C003863,missing_email,customers_10000.csv,3864,run_94de4abf48,Abhiram Sem,,9322643715
+C003889,missing_email,customers_10000.csv,3890,run_94de4abf48,Wriddhish Nadig,,9845336045
+C003909,invalid_phone,customers_10000.csv,3910,run_94de4abf48,Warhi Dube,warhi.dube8126@yahoo.com,12345
+C003922,missing_name,customers_10000.csv,3923,run_94de4abf48,,bhavna.shah1719@outlook.com,8875397309
+C003929,invalid_phone,customers_10000.csv,3930,run_94de4abf48,Nirja Shetty,nirja.shetty5854@outlook.com,12345
+C003934,missing_name,customers_10000.csv,3935,run_94de4abf48,,wishi.parsa5256@outlook.com,6762832185
+C003993,invalid_phone,customers_10000.csv,3994,run_94de4abf48,Janaki Kata,janaki.kata540@hotmail.com,12345
+C004053,invalid_phone,customers_10000.csv,4054,run_94de4abf48,Upkaar Dar,upkaar.dar9690@hotmail.com,00000
+C004066,invalid_phone,customers_10000.csv,4067,run_94de4abf48,Aryan Sastry,aryan.sastry8219@yahoo.com,00000
+C004102,invalid_phone,customers_10000.csv,4103,run_94de4abf48,Netra Bajaj,netra.bajaj899@yahoo.com,12345
+C004117,invalid_phone,customers_10000.csv,4118,run_94de4abf48,Madhav Mann,madhav.mann355@yahoo.com,00000
+C004131,invalid_phone,customers_10000.csv,4132,run_94de4abf48,Hema Kumer,hema.kumer2874@yahoo.com,98765
+C004153,missing_name,customers_10000.csv,4154,run_94de4abf48,,mohini.bajaj2255@outlook.com,8623492745
+C004193,invalid_phone,customers_10000.csv,4194,run_94de4abf48,Chatura Bawa,chatura.bawa8715@yahoo.com,12345
+C004256,invalid_phone,customers_10000.csv,4257,run_94de4abf48,Keya Nagy,keya.nagy952@yahoo.com,abcdefghij
+C004288,missing_email,customers_10000.csv,4289,run_94de4abf48,Niharika Luthra,,6629030220
+C004316,missing_email,customers_10000.csv,4317,run_94de4abf48,Rayaan Ghosh,,9022367636
+C004323,missing_name,customers_10000.csv,4324,run_94de4abf48,,ladli.anne8411@outlook.com,9515031414
+C004343,missing_name,customers_10000.csv,4344,run_94de4abf48,,samaksh.baral9324@yahoo.com,7596054222
+C004369,invalid_phone,customers_10000.csv,4370,run_94de4abf48,Nathan Swamy,nathan.swamy7393@outlook.com,12345
+C004386,missing_name,customers_10000.csv,4387,run_94de4abf48,,nathan.mukhopadhyay2035@yahoo.com,9258858077
+C004455,missing_name,customers_10000.csv,4456,run_94de4abf48,,udant.sani2787@gmail.com,8195840414
+C004470,missing_email,customers_10000.csv,4471,run_94de4abf48,Devika Kuruvilla,,6070043078
+C004485,missing_name,customers_10000.csv,4486,run_94de4abf48,,sneha.kothari4962@gmail.com,7651524513
+C004524,missing_email,customers_10000.csv,4525,run_94de4abf48,Anthony Chada,,7615856751
+C004538,invalid_phone,customers_10000.csv,4539,run_94de4abf48,Varsha Sahni,varsha.sahni6546@hotmail.com,00000
+C004566,missing_name,customers_10000.csv,4567,run_94de4abf48,,ridhi.ravel6097@hotmail.com,8706017713
+C004583,missing_email,customers_10000.csv,4584,run_94de4abf48,Tanmayi Kale,,6154647515
+C004630,invalid_phone,customers_10000.csv,4631,run_94de4abf48,Falak Datta,falak.datta7023@gmail.com,98765
+C004640,missing_name,customers_10000.csv,4641,run_94de4abf48,,ekani.hora6013@hotmail.com,9426599149
+C004642,missing_name,customers_10000.csv,4643,run_94de4abf48,,saanvi.tara2921@hotmail.com,7913910190
+C004700,missing_name,customers_10000.csv,4701,run_94de4abf48,,tanish.samra9801@outlook.com,7789041577
+C004734,missing_email,customers_10000.csv,4735,run_94de4abf48,Jack Buch,,9741405343
+C004735,missing_name,customers_10000.csv,4736,run_94de4abf48,,nimrat.ahluwalia5320@outlook.com,7537490532
+C004756,missing_name,customers_10000.csv,4757,run_94de4abf48,,jhalak.misra7150@yahoo.com,8423210192
+C004765,missing_name,customers_10000.csv,4766,run_94de4abf48,,kai.maharaj4379@yahoo.com,8866525988
+C004776,missing_email,customers_10000.csv,4777,run_94de4abf48,Ayaan Dyal,,8888266353
+C004791,missing_name,customers_10000.csv,4792,run_94de4abf48,,netra.bahri9292@hotmail.com,8946521173
+C004795,missing_email,customers_10000.csv,4796,run_94de4abf48,Neelima Prabhakar,,8890595228
+C004807,missing_name,customers_10000.csv,4808,run_94de4abf48,,abeer.karan3182@yahoo.com,9436718164
+C004810,missing_name,customers_10000.csv,4811,run_94de4abf48,,lavanya.maharaj2079@gmail.com,8492483141
+C004811,missing_email,customers_10000.csv,4812,run_94de4abf48,Azaan Balakrishnan,,6486466398
+C004818,invalid_phone,customers_10000.csv,4819,run_94de4abf48,Yug Sem,yug.sem8373@hotmail.com,12345
+C004823,missing_name,customers_10000.csv,4824,run_94de4abf48,,chandani.varty4389@outlook.com,7528017635
+C004830,invalid_phone,customers_10000.csv,4831,run_94de4abf48,Jatin Balasubramanian,jatin.balasubramanian568@gmail.com,98765
+C004843,missing_email,customers_10000.csv,4844,run_94de4abf48,Omisha Kale,,7588833231
+C004849,missing_name,customers_10000.csv,4850,run_94de4abf48,,abdul.yadav6084@hotmail.com,9069913499
+C004853,missing_email,customers_10000.csv,4854,run_94de4abf48,Megha Bava,,9796471319
+C004885,invalid_phone,customers_10000.csv,4886,run_94de4abf48,Jagdish Varkey,jagdish.varkey2499@yahoo.com,abcdefghij
+C004906,missing_email,customers_10000.csv,4907,run_94de4abf48,Arin Narang,,9375384161
+C004968,missing_email,customers_10000.csv,4969,run_94de4abf48,Praneel Vala,,7600503716
+C004981,missing_name,customers_10000.csv,4982,run_94de4abf48,,harshil.singhal9262@yahoo.com,8246515155
+C004988,missing_email,customers_10000.csv,4989,run_94de4abf48,Radha Krish,,7294938238
+C005005,missing_name,customers_10000.csv,5006,run_94de4abf48,,azad.tandon3031@hotmail.com,9992751902
+C005006,missing_name,customers_10000.csv,5007,run_94de4abf48,,oviya.dalal963@hotmail.com,8362402595
+C005010,missing_email,customers_10000.csv,5011,run_94de4abf48,Ubika Choudhry,,7087052365
+C005068,missing_name,customers_10000.csv,5069,run_94de4abf48,,david.khanna2707@gmail.com,9359470318
+C005074,missing_email,customers_10000.csv,5075,run_94de4abf48,Urishilla Yohannan,,6075837921
+C005088,missing_name,customers_10000.csv,5089,run_94de4abf48,,rudra.bawa1317@yahoo.com,8900401054
+C005093,invalid_phone,customers_10000.csv,5094,run_94de4abf48,Hemangini Sami,hemangini.sami8402@yahoo.com,98765
+C005108,missing_email,customers_10000.csv,5109,run_94de4abf48,Bhavika Raj,,8396238072
+C005142,missing_name,customers_10000.csv,5143,run_94de4abf48,,sanaya.bhattacharyya2072@gmail.com,9479700319
+C005144,missing_name,customers_10000.csv,5145,run_94de4abf48,,daksh.goda2472@gmail.com,8568424663
+C005147,invalid_phone,customers_10000.csv,5148,run_94de4abf48,Garima Khosla,garima.khosla8923@gmail.com,12345
+C005150,missing_name,customers_10000.csv,5151,run_94de4abf48,,oni.murty1203@hotmail.com,9133592582
+C005152,missing_email,customers_10000.csv,5153,run_94de4abf48,Eta Dasgupta,,9428667007
+C005177,invalid_phone,customers_10000.csv,5178,run_94de4abf48,Hemangini Menon,hemangini.menon3290@gmail.com,abcdefghij
+C005223,invalid_phone,customers_10000.csv,5224,run_94de4abf48,Anay Dugar,anay.dugar1267@outlook.com,12345
+C005224,missing_email,customers_10000.csv,5225,run_94de4abf48,Rushil Nazareth,,7003013294
+C005237,missing_email,customers_10000.csv,5238,run_94de4abf48,Daksha Char,,8415395627
+C005269,invalid_phone,customers_10000.csv,5270,run_94de4abf48,Jack Lalla,jack.lalla1054@outlook.com,00000
+C005299,missing_name,customers_10000.csv,5300,run_94de4abf48,,chandani.tiwari2986@outlook.com,6069385771
+C005311,missing_email,customers_10000.csv,5312,run_94de4abf48,Laksh Shetty,,9903985425
+C005315,missing_name,customers_10000.csv,5316,run_94de4abf48,,chavvi.deep1754@yahoo.com,7402244955
+C005365,missing_name,customers_10000.csv,5366,run_94de4abf48,,jai.ratta767@outlook.com,7172331913
+C005366,missing_email,customers_10000.csv,5367,run_94de4abf48,Tejas Dey,,6172937746
+C005370,invalid_phone,customers_10000.csv,5371,run_94de4abf48,Jagrati D’Alia,jagrati.dalia7473@yahoo.com,98765
+C005377,missing_email,customers_10000.csv,5378,run_94de4abf48,Bakhshi Madan,,6194816890
+C005460,missing_name,customers_10000.csv,5461,run_94de4abf48,,alexander.lalla1402@hotmail.com,8058609706
+C005473,missing_email,customers_10000.csv,5474,run_94de4abf48,Oviya Datta,,7911589108
+C005488,missing_name,customers_10000.csv,5489,run_94de4abf48,,yashawini.varty1324@outlook.com,6668464823
+C005539,missing_name,customers_10000.csv,5540,run_94de4abf48,,bhavya.ahuja2090@yahoo.com,6401188315
+C005546,missing_name,customers_10000.csv,5547,run_94de4abf48,,libni.khare4362@hotmail.com,6090110359
+C005565,missing_name,customers_10000.csv,5566,run_94de4abf48,,omya.kohli3740@outlook.com,7114983717
+C005585,missing_email,customers_10000.csv,5586,run_94de4abf48,Gayathri Sehgal,,6269042082
+C005595,missing_name,customers_10000.csv,5596,run_94de4abf48,,ucchal.mahal3952@gmail.com,8887313626
+C005596,missing_name,customers_10000.csv,5597,run_94de4abf48,,unni.borde4720@hotmail.com,9929664759
+C005609,missing_name,customers_10000.csv,5610,run_94de4abf48,,sai.chokshi7448@outlook.com,9342824672
+C005622,missing_name,customers_10000.csv,5623,run_94de4abf48,,tripti.pal5847@hotmail.com,9252742121
+C005642,missing_email,customers_10000.csv,5643,run_94de4abf48,Rushil Saraf,,9869226986
+C005650,missing_email,customers_10000.csv,5651,run_94de4abf48,Champak Jhaveri,,6649188655
+C005653,invalid_phone,customers_10000.csv,5654,run_94de4abf48,Tripti Kala,tripti.kala7825@yahoo.com,00000
+C005664,missing_name,customers_10000.csv,5665,run_94de4abf48,,rayaan.natarajan6105@yahoo.com,7459460916
+C005689,invalid_phone,customers_10000.csv,5690,run_94de4abf48,Bhavika Sampath,bhavika.sampath5563@yahoo.com,00000
+C005720,invalid_phone,customers_10000.csv,5721,run_94de4abf48,Warjas Khanna,warjas.khanna5252@gmail.com,abcdefghij
+C005727,missing_email,customers_10000.csv,5728,run_94de4abf48,Bhavini Comar,,8260170629
+C005737,missing_email,customers_10000.csv,5738,run_94de4abf48,Rachana Anne,,7302213562
+C005746,missing_email,customers_10000.csv,5747,run_94de4abf48,Logan Sankaran,,9132731533
+C005762,missing_email,customers_10000.csv,5763,run_94de4abf48,Vrinda Tailor,,8724059070
+C005790,invalid_phone,customers_10000.csv,5791,run_94de4abf48,Irya Puri,irya.puri2251@gmail.com,00000
+C005814,missing_email,customers_10000.csv,5815,run_94de4abf48,Raagini Palla,,7912657976
+C005842,missing_name,customers_10000.csv,5843,run_94de4abf48,,onveer.bhatia1258@gmail.com,8863357439
+C005850,invalid_phone,customers_10000.csv,5851,run_94de4abf48,Jonathan Raghavan,jonathan.raghavan8011@gmail.com,abcdefghij
+C005853,missing_email,customers_10000.csv,5854,run_94de4abf48,Qasim Aggarwal,,7790967397
+C005860,missing_name,customers_10000.csv,5861,run_94de4abf48,,ekbal.rai9917@hotmail.com,6431863136
+C005936,invalid_phone,customers_10000.csv,5937,run_94de4abf48,Kala Tara,kala.tara8445@outlook.com,98765
+C006054,missing_email,customers_10000.csv,6055,run_94de4abf48,Robert Peri,,7341552754
+C006062,invalid_phone,customers_10000.csv,6063,run_94de4abf48,Lakshmi Arora,lakshmi.arora6481@outlook.com,12345
+C006079,missing_name,customers_10000.csv,6080,run_94de4abf48,,diya.kanda9466@gmail.com,8678986816
+C006087,missing_name,customers_10000.csv,6088,run_94de4abf48,,oni.venkataraman3585@yahoo.com,6800316539
+C006097,missing_name,customers_10000.csv,6098,run_94de4abf48,,omkaar.dora4172@outlook.com,6688190051
+C006100,missing_email,customers_10000.csv,6101,run_94de4abf48,Faras Batra,,9319041272
+C006101,missing_name,customers_10000.csv,6102,run_94de4abf48,,arjun.jha8553@yahoo.com,8162413992
+C006105,invalid_phone,customers_10000.csv,6106,run_94de4abf48,Janani Sethi,janani.sethi2678@hotmail.com,12345
+C006106,missing_name,customers_10000.csv,6107,run_94de4abf48,,devansh.iyengar155@hotmail.com,6817001089
+C006127,missing_name,customers_10000.csv,6128,run_94de4abf48,,krishna.kata4394@hotmail.com,8741768625
+C006132,missing_name,customers_10000.csv,6133,run_94de4abf48,,xiti.more6010@hotmail.com,6237938498
+C006144,missing_name,customers_10000.csv,6145,run_94de4abf48,,liam.goswami5042@hotmail.com,9379159891
+C006192,invalid_phone,customers_10000.csv,6193,run_94de4abf48,Qadim Koshy,qadim.koshy1042@hotmail.com,00000
+C006217,invalid_phone,customers_10000.csv,6218,run_94de4abf48,Nikita Golla,nikita.golla8530@outlook.com,98765
+C006249,invalid_phone,customers_10000.csv,6250,run_94de4abf48,Arjun Shah,arjun.shah2649@outlook.com,abcdefghij
+C006252,invalid_phone,customers_10000.csv,6253,run_94de4abf48,Arjun Hari,arjun.hari2414@outlook.com,98765
+C006290,missing_email,customers_10000.csv,6291,run_94de4abf48,Vedhika Arora,,8606227190
+C006320,invalid_phone,customers_10000.csv,6321,run_94de4abf48,Rushil Dani,rushil.dani6346@hotmail.com,98765
+C006328,missing_name,customers_10000.csv,6329,run_94de4abf48,,oscar.boase647@hotmail.com,6887821355
+C006372,missing_email,customers_10000.csv,6373,run_94de4abf48,Aradhana Puri,,6916595369
+C006416,invalid_phone,customers_10000.csv,6417,run_94de4abf48,David Bir,david.bir6778@gmail.com,abcdefghij
+C006422,invalid_phone,customers_10000.csv,6423,run_94de4abf48,Advay Kata,advay.kata4962@hotmail.com,12345
+C006434,missing_name,customers_10000.csv,6435,run_94de4abf48,,tamanna.nagar7944@gmail.com,8836155049
+C006435,invalid_phone,customers_10000.csv,6436,run_94de4abf48,Damyanti Garde,damyanti.garde243@gmail.com,98765
+C006441,missing_name,customers_10000.csv,6442,run_94de4abf48,,zinal.kaur8977@gmail.com,7537893236
+C006463,invalid_phone,customers_10000.csv,6464,run_94de4abf48,Neelima Seshadri,neelima.seshadri5417@gmail.com,12345
+C006465,missing_email,customers_10000.csv,6466,run_94de4abf48,Chaitaly Devi,,7011711734
+C006466,invalid_phone,customers_10000.csv,6467,run_94de4abf48,Fariq Chandra,fariq.chandra2266@yahoo.com,00000
+C006485,invalid_phone,customers_10000.csv,6486,run_94de4abf48,Qadim Lall,qadim.lall4821@outlook.com,12345
+C006487,missing_name,customers_10000.csv,6488,run_94de4abf48,,wazir.mahajan733@outlook.com,9772825911
+C006493,missing_email,customers_10000.csv,6494,run_94de4abf48,Henry Tata,,8866805164
+C006494,missing_name,customers_10000.csv,6495,run_94de4abf48,,ishwar.mann8262@yahoo.com,9070693750
+C006508,missing_email,customers_10000.csv,6509,run_94de4abf48,Vanya Narang,,8365448960
+C006566,missing_name,customers_10000.csv,6567,run_94de4abf48,,zayyan.dass2981@outlook.com,9549786851
+C006611,missing_name,customers_10000.csv,6612,run_94de4abf48,,januja.sama241@outlook.com,6663066605
+C006614,invalid_phone,customers_10000.csv,6615,run_94de4abf48,Noah Sarna,noah.sarna3144@gmail.com,12345
+C006652,invalid_phone,customers_10000.csv,6653,run_94de4abf48,Yuvraj Nagar,yuvraj.nagar1646@yahoo.com,abcdefghij
+C006681,missing_email,customers_10000.csv,6682,run_94de4abf48,Dipta Kapoor,,7968349077
+C006683,missing_name,customers_10000.csv,6684,run_94de4abf48,,balvan.patil3693@outlook.com,8438752979
+C006727,missing_email,customers_10000.csv,6728,run_94de4abf48,Ayushman Sahota,,7136860967
+C006746,invalid_phone,customers_10000.csv,6747,run_94de4abf48,Gabriel Kade,gabriel.kade8040@gmail.com,12345
+C006760,missing_email,customers_10000.csv,6761,run_94de4abf48,Ishanvi Ratti,,8003290720
+C006764,missing_name,customers_10000.csv,6765,run_94de4abf48,,inaya.venkatesh805@outlook.com,7571395760
+C006776,invalid_phone,customers_10000.csv,6777,run_94de4abf48,Chakrika Kala,chakrika.kala8202@yahoo.com,00000
+C006804,missing_name,customers_10000.csv,6805,run_94de4abf48,,ijaya.grewal6902@outlook.com,8687437811
+C006862,missing_name,customers_10000.csv,6863,run_94de4abf48,,chakradhar.mani4356@gmail.com,9207257275
+C006887,missing_email,customers_10000.csv,6888,run_94de4abf48,Odika Narayan,,6014221188
+C006893,invalid_phone,customers_10000.csv,6894,run_94de4abf48,Shivansh Saran,shivansh.saran4053@gmail.com,abcdefghij
+C006933,missing_name,customers_10000.csv,6934,run_94de4abf48,,ekanta.sangha1461@gmail.com,8443461522
+C006948,missing_email,customers_10000.csv,6949,run_94de4abf48,Daksh Krishnamurthy,,8671366818
+C006978,missing_email,customers_10000.csv,6979,run_94de4abf48,Idika Khosla,,6741857791
+C006989,invalid_phone,customers_10000.csv,6990,run_94de4abf48,Krishna Naidu,krishna.naidu5665@yahoo.com,abcdefghij
+C006995,invalid_phone,customers_10000.csv,6996,run_94de4abf48,Amara Varughese,amara.varughese9040@gmail.com,98765
+C006997,missing_email,customers_10000.csv,6998,run_94de4abf48,Ekalinga Mannan,,8422816229
+C007016,missing_email,customers_10000.csv,7017,run_94de4abf48,Pavani Puri,,7162532031
+C007017,missing_name,customers_10000.csv,7018,run_94de4abf48,,dominic.borah2671@outlook.com,9846291826
+C007025,invalid_phone,customers_10000.csv,7026,run_94de4abf48,Upkaar Krishnan,upkaar.krishnan3816@hotmail.com,12345
+C007046,missing_email,customers_10000.csv,7047,run_94de4abf48,Irya Rattan,,8728669553
+C007054,missing_name,customers_10000.csv,7055,run_94de4abf48,,vasudha.swamy1495@hotmail.com,6038762028
+C007066,missing_name,customers_10000.csv,7067,run_94de4abf48,,adweta.som2301@hotmail.com,7301377917
+C007151,invalid_phone,customers_10000.csv,7152,run_94de4abf48,Vyanjana Mutti,vyanjana.mutti272@gmail.com,98765
+C007174,missing_name,customers_10000.csv,7175,run_94de4abf48,,samar.prasad4633@hotmail.com,9901385404
+C007182,invalid_phone,customers_10000.csv,7183,run_94de4abf48,Rachit Patel,rachit.patel4811@outlook.com,12345
+C007197,invalid_phone,customers_10000.csv,7198,run_94de4abf48,Janaki Char,janaki.char7437@yahoo.com,98765
+C007219,missing_name,customers_10000.csv,7220,run_94de4abf48,,jason.shah4772@yahoo.com,8575268065
+C007226,missing_name,customers_10000.csv,7227,run_94de4abf48,,varsha.palla3729@outlook.com,6073035277
+C007241,invalid_phone,customers_10000.csv,7242,run_94de4abf48,Adweta Puri,adweta.puri8628@gmail.com,abcdefghij
+C007309,missing_email,customers_10000.csv,7310,run_94de4abf48,Vamakshi Kurian,,9129514818
+C007341,invalid_phone,customers_10000.csv,7342,run_94de4abf48,Ayush Deep,ayush.deep1946@outlook.com,abcdefghij
+C007345,missing_email,customers_10000.csv,7346,run_94de4abf48,Eiravati Mistry,,8276423752
+C007356,missing_email,customers_10000.csv,7357,run_94de4abf48,Viraj Narayanan,,7701161633
+C007363,missing_name,customers_10000.csv,7364,run_94de4abf48,,gaurangi.pall7489@outlook.com,6256375995
+C007368,missing_name,customers_10000.csv,7369,run_94de4abf48,,gopal.grewal3278@hotmail.com,7665061257
+C007421,invalid_phone,customers_10000.csv,7422,run_94de4abf48,Bishakha Tailor,bishakha.tailor406@hotmail.com,12345
+C007501,missing_email,customers_10000.csv,7502,run_94de4abf48,Hardik Saini,,9979982018
+C007542,missing_name,customers_10000.csv,7543,run_94de4abf48,,yagnesh.rama5083@outlook.com,6986082676
+C007565,invalid_phone,customers_10000.csv,7566,run_94de4abf48,Guneet Rajagopalan,guneet.rajagopalan7351@gmail.com,12345
+C007574,missing_name,customers_10000.csv,7575,run_94de4abf48,,pratyush.mangal7265@hotmail.com,8085289565
+C007622,invalid_phone,customers_10000.csv,7623,run_94de4abf48,Rushil Suri,rushil.suri8183@hotmail.com,12345
+C007627,invalid_phone,customers_10000.csv,7628,run_94de4abf48,Max Dasgupta,max.dasgupta2225@hotmail.com,abcdefghij
+C007643,missing_name,customers_10000.csv,7644,run_94de4abf48,,unni.bandi3135@yahoo.com,7426002009
+C007670,missing_email,customers_10000.csv,7671,run_94de4abf48,Anirudh Dua,,6493928371
+C007676,invalid_phone,customers_10000.csv,7677,run_94de4abf48,Janaki Prashad,janaki.prashad5056@yahoo.com,00000
+C007688,missing_name,customers_10000.csv,7689,run_94de4abf48,,nicholas.kashyap7047@gmail.com,9192168974
+C007721,invalid_phone,customers_10000.csv,7722,run_94de4abf48,Vasana Grewal,vasana.grewal3796@outlook.com,98765
+C007734,missing_email,customers_10000.csv,7735,run_94de4abf48,Mohini Jayaraman,,6139138898
+C007740,invalid_phone,customers_10000.csv,7741,run_94de4abf48,Faris Batta,faris.batta9835@hotmail.com,12345
+C007752,invalid_phone,customers_10000.csv,7753,run_94de4abf48,Lavanya Sen,lavanya.sen1405@outlook.com,12345
+C007775,missing_email,customers_10000.csv,7776,run_94de4abf48,Dipta Choudhury,,6514392700
+C007794,invalid_phone,customers_10000.csv,7795,run_94de4abf48,Maya Sagar,maya.sagar160@gmail.com,00000
+C007800,missing_name,customers_10000.csv,7801,run_94de4abf48,,robert.tailor6701@hotmail.com,7524789297
+C007812,missing_name,customers_10000.csv,7813,run_94de4abf48,,sarthak.nadkarni2482@hotmail.com,6264673060
+C007830,invalid_phone,customers_10000.csv,7831,run_94de4abf48,Zehaan Sane,zehaan.sane3965@hotmail.com,00000
+C007888,invalid_phone,customers_10000.csv,7889,run_94de4abf48,Lopa Mishra,lopa.mishra2516@gmail.com,12345
+C007900,invalid_phone,customers_10000.csv,7901,run_94de4abf48,Patrick Golla,patrick.golla3019@hotmail.com,12345
+C007936,missing_name,customers_10000.csv,7937,run_94de4abf48,,jyoti.khanna2431@hotmail.com,6428815470
+C007953,missing_name,customers_10000.csv,7954,run_94de4abf48,,triya.desai5756@hotmail.com,9716955129
+C007964,missing_name,customers_10000.csv,7965,run_94de4abf48,,patrick.cherian7765@yahoo.com,6503844956
+C007971,invalid_phone,customers_10000.csv,7972,run_94de4abf48,Ayaan Basu,ayaan.basu3938@yahoo.com,00000
+C008012,missing_email,customers_10000.csv,8013,run_94de4abf48,Luke Mistry,,9613397751
+C008030,missing_email,customers_10000.csv,8031,run_94de4abf48,Ayush Zachariah,,8619357548
+C008040,invalid_phone,customers_10000.csv,8041,run_94de4abf48,Shaurya Devan,shaurya.devan6812@gmail.com,98765
+C008053,missing_email,customers_10000.csv,8054,run_94de4abf48,Viraj Sood,,9029550556
+C008062,missing_email,customers_10000.csv,8063,run_94de4abf48,Bahadurjit Prakash,,9316525680
+C008068,missing_email,customers_10000.csv,8069,run_94de4abf48,Charan Chhabra,,9147172612
+C008085,missing_name,customers_10000.csv,8086,run_94de4abf48,,rohan.gour5606@yahoo.com,9086580256
+C008097,missing_email,customers_10000.csv,8098,run_94de4abf48,Manya Dora,,8988828612
+C008109,missing_email,customers_10000.csv,8110,run_94de4abf48,Zashil Varma,,8579566303
+C008127,missing_email,customers_10000.csv,8128,run_94de4abf48,Hemani Soni,,8912166809
+C008133,missing_email,customers_10000.csv,8134,run_94de4abf48,Tejas Dhawan,,6341325512
+C008221,invalid_phone,customers_10000.csv,8222,run_94de4abf48,Advay Sur,advay.sur8004@outlook.com,12345
+C008225,missing_name,customers_10000.csv,8226,run_94de4abf48,,arya.sem5733@gmail.com,6739342385
+C008243,invalid_phone,customers_10000.csv,8244,run_94de4abf48,Daksh Karnik,daksh.karnik1343@outlook.com,12345
+C008251,missing_email,customers_10000.csv,8252,run_94de4abf48,Jasmit Sahota,,6058798043
+C008278,missing_email,customers_10000.csv,8279,run_94de4abf48,Nandini Edwin,,8506119509
+C008283,invalid_phone,customers_10000.csv,8284,run_94de4abf48,Bachittar Mohanty,bachittar.mohanty9653@outlook.com,12345
+C008286,missing_name,customers_10000.csv,8287,run_94de4abf48,,ekani.atwal9512@outlook.com,8220107919
+C008319,missing_name,customers_10000.csv,8320,run_94de4abf48,,qasim.bora1268@outlook.com,7283571243
+C008338,missing_name,customers_10000.csv,8339,run_94de4abf48,,abhiram.korpal614@hotmail.com,7306485818
+C008377,missing_email,customers_10000.csv,8378,run_94de4abf48,Owen Karnik,,9735953376
+C008448,missing_email,customers_10000.csv,8449,run_94de4abf48,Alexander Bhandari,,8362869995
+C008482,invalid_phone,customers_10000.csv,8483,run_94de4abf48,Liam Ganguly,liam.ganguly8012@yahoo.com,98765
+C008522,missing_email,customers_10000.csv,8523,run_94de4abf48,Gaurav Kumar,,7904168342
+C008526,missing_name,customers_10000.csv,8527,run_94de4abf48,,zansi.cherian901@outlook.com,7263455464
+C008566,invalid_phone,customers_10000.csv,8567,run_94de4abf48,Mitesh Devi,mitesh.devi1437@gmail.com,98765
+C008579,invalid_phone,customers_10000.csv,8580,run_94de4abf48,Aarush Kapur,aarush.kapur3288@gmail.com,00000
+C008580,invalid_phone,customers_10000.csv,8581,run_94de4abf48,Oviya Sabharwal,oviya.sabharwal4810@outlook.com,12345
+C008581,missing_email,customers_10000.csv,8582,run_94de4abf48,Dhriti Borah,,8290487564
+C008582,missing_email,customers_10000.csv,8583,run_94de4abf48,Yashasvi Narayanan,,6710005622
+C008594,missing_email,customers_10000.csv,8595,run_94de4abf48,Owen Mital,,9140690429
+C008595,missing_name,customers_10000.csv,8596,run_94de4abf48,,leena.warrior5261@gmail.com,9776681420
+C008599,missing_email,customers_10000.csv,8600,run_94de4abf48,Kiaan Apte,,9768249480
+C008613,missing_email,customers_10000.csv,8614,run_94de4abf48,Jai Chopra,,6571035319
+C008642,invalid_phone,customers_10000.csv,8643,run_94de4abf48,Prisha Patil,prisha.patil8701@outlook.com,abcdefghij
+C008655,missing_email,customers_10000.csv,8656,run_94de4abf48,Ekiya Salvi,,7512815922
+C008662,missing_name,customers_10000.csv,8663,run_94de4abf48,,kamya.nayar3968@hotmail.com,7231489328
+C008666,missing_email,customers_10000.csv,8667,run_94de4abf48,Isaiah Hari,,6526477630
+C008674,missing_name,customers_10000.csv,8675,run_94de4abf48,,jalsa.kala9292@hotmail.com,9098397448
+C008675,missing_name,customers_10000.csv,8676,run_94de4abf48,,peter.barman8451@outlook.com,7551959472
+C008763,missing_name,customers_10000.csv,8764,run_94de4abf48,,william.vasa7880@gmail.com,7147121030
+C008793,missing_name,customers_10000.csv,8794,run_94de4abf48,,gaurika.more7433@yahoo.com,6705116137
+C008800,invalid_phone,customers_10000.csv,8801,run_94de4abf48,Jack Radhakrishnan,jack.radhakrishnan2179@gmail.com,abcdefghij
+C008826,missing_name,customers_10000.csv,8827,run_94de4abf48,,anvi.rajagopal6536@yahoo.com,7853194913
+C008832,invalid_phone,customers_10000.csv,8833,run_94de4abf48,Mitesh Kalita,mitesh.kalita8672@outlook.com,98765
+C008833,invalid_phone,customers_10000.csv,8834,run_94de4abf48,Lipika Sahota,lipika.sahota5623@hotmail.com,abcdefghij
+C008858,missing_email,customers_10000.csv,8859,run_94de4abf48,Bishakha Bala,,6521362687
+C008867,missing_email,customers_10000.csv,8868,run_94de4abf48,Kashvi Kibe,,9484367465
+C008876,missing_email,customers_10000.csv,8877,run_94de4abf48,Sai Sarkar,,6003575305
+C008880,missing_email,customers_10000.csv,8881,run_94de4abf48,Vansha Ram,,7521764185
+C008906,missing_name,customers_10000.csv,8907,run_94de4abf48,,saumya.palan1560@hotmail.com,8241459223
+C008924,invalid_phone,customers_10000.csv,8925,run_94de4abf48,Sneha Kumar,sneha.kumar4934@gmail.com,abcdefghij
+C008928,missing_name,customers_10000.csv,8929,run_94de4abf48,,ekbal.parsa1819@outlook.com,6486006811
+C008948,missing_name,customers_10000.csv,8949,run_94de4abf48,,udyati.sawhney7834@hotmail.com,6383184322
+C009022,missing_email,customers_10000.csv,9023,run_94de4abf48,Dalaja Sani,,6800687910
+C009062,missing_email,customers_10000.csv,9063,run_94de4abf48,Widisha Modi,,7686064485
+C009075,invalid_phone,customers_10000.csv,9076,run_94de4abf48,Barkha Andra,barkha.andra7891@outlook.com,12345
+C009099,missing_email,customers_10000.csv,9100,run_94de4abf48,Kavya Ray,,8024475023
+C009114,invalid_phone,customers_10000.csv,9115,run_94de4abf48,Ria Patla,ria.patla6030@hotmail.com,12345
+C009130,missing_email,customers_10000.csv,9131,run_94de4abf48,Tanish Bassi,,6396894594
+C009137,invalid_phone,customers_10000.csv,9138,run_94de4abf48,Ekansh Pal,ekansh.pal7735@hotmail.com,abcdefghij
+C009140,missing_email,customers_10000.csv,9141,run_94de4abf48,Nidra Bora,,9672627492
+C009164,missing_name,customers_10000.csv,9165,run_94de4abf48,,oviya.sarin9781@gmail.com,8991946139
+C009200,missing_email,customers_10000.csv,9201,run_94de4abf48,Omisha Sami,,9046902822
+C009274,missing_email,customers_10000.csv,9275,run_94de4abf48,Dayamai Behl,,8393684002
+C009277,invalid_phone,customers_10000.csv,9278,run_94de4abf48,Samarth Chander,samarth.chander890@outlook.com,98765
+C009289,invalid_phone,customers_10000.csv,9290,run_94de4abf48,Widisha Dyal,widisha.dyal3786@outlook.com,12345
+C009297,missing_name,customers_10000.csv,9298,run_94de4abf48,,upasna.ramakrishnan4787@yahoo.com,7266098962
+C009313,missing_name,customers_10000.csv,9314,run_94de4abf48,,falan.chada7169@hotmail.com,6883603142
+C009314,invalid_phone,customers_10000.csv,9315,run_94de4abf48,Tristan Bhagat,tristan.bhagat9437@yahoo.com,12345
+C009324,invalid_phone,customers_10000.csv,9325,run_94de4abf48,Bhanumati Boase,bhanumati.boase2088@hotmail.com,abcdefghij
+C009343,missing_email,customers_10000.csv,9344,run_94de4abf48,Megha Chaudhry,,9703147212
+C009397,invalid_phone,customers_10000.csv,9398,run_94de4abf48,Abeer Rao,abeer.rao8680@yahoo.com,abcdefghij
+C009419,missing_name,customers_10000.csv,9420,run_94de4abf48,,kai.seshadri4421@outlook.com,9351359308
+C009457,missing_name,customers_10000.csv,9458,run_94de4abf48,,sanya.sarna7713@yahoo.com,8828216452
+C009459,invalid_phone,customers_10000.csv,9460,run_94de4abf48,Victor Srinivasan,victor.srinivasan7675@yahoo.com,98765
+C009471,missing_name,customers_10000.csv,9472,run_94de4abf48,,arya.batra9121@gmail.com,8775815968
+C009504,invalid_phone,customers_10000.csv,9505,run_94de4abf48,Veda Menon,veda.menon4584@outlook.com,12345
+C009505,missing_name,customers_10000.csv,9506,run_94de4abf48,,falak.shan1776@outlook.com,7817430595
+C009540,missing_email,customers_10000.csv,9541,run_94de4abf48,Yachana Vig,,6853016894
+C009562,missing_email,customers_10000.csv,9563,run_94de4abf48,Pratyush Kibe,,8919211768
+C009575,missing_name,customers_10000.csv,9576,run_94de4abf48,,krisha.ranganathan7841@hotmail.com,9859409764
+C009577,missing_email,customers_10000.csv,9578,run_94de4abf48,Jyoti Sarin,,7279522558
+C009580,invalid_phone,customers_10000.csv,9581,run_94de4abf48,Jeevika Kashyap,jeevika.kashyap8109@hotmail.com,abcdefghij
+C009583,invalid_phone,customers_10000.csv,9584,run_94de4abf48,Jonathan Bera,jonathan.bera1516@gmail.com,98765
+C009589,missing_email,customers_10000.csv,9590,run_94de4abf48,Farhan Reddy,,6734027249
+C009602,missing_email,customers_10000.csv,9603,run_94de4abf48,Nathan Pillai,,6062649621
+C009604,missing_email,customers_10000.csv,9605,run_94de4abf48,Sudiksha Nadig,,6575012713
+C009626,missing_name,customers_10000.csv,9627,run_94de4abf48,,noah.wason8074@outlook.com,7373810063
+C009634,invalid_phone,customers_10000.csv,9635,run_94de4abf48,Avni Pal,avni.pal4629@hotmail.com,abcdefghij
+C009661,missing_name,customers_10000.csv,9662,run_94de4abf48,,michael.narain4364@yahoo.com,8943821789
+C009669,missing_email,customers_10000.csv,9670,run_94de4abf48,Nidhi Ganguly,,7140897882
+C009680,invalid_phone,customers_10000.csv,9681,run_94de4abf48,Vincent Bawa,vincent.bawa3517@hotmail.com,abcdefghij
+C009717,missing_name,customers_10000.csv,9718,run_94de4abf48,,garima.borde5584@yahoo.com,6882765847
+C009719,missing_name,customers_10000.csv,9720,run_94de4abf48,,ekavir.pandya376@outlook.com,8976770636
+C009720,missing_email,customers_10000.csv,9721,run_94de4abf48,Eta Desai,,7374287241
+C009731,missing_email,customers_10000.csv,9732,run_94de4abf48,Jeet Prakash,,6159086832
+C009737,invalid_phone,customers_10000.csv,9738,run_94de4abf48,Zayan Iyengar,zayan.iyengar4085@hotmail.com,00000
+C009758,invalid_phone,customers_10000.csv,9759,run_94de4abf48,Guneet Mangat,guneet.mangat4025@yahoo.com,98765
+C009788,invalid_phone,customers_10000.csv,9789,run_94de4abf48,Niharika Bandi,niharika.bandi4589@outlook.com,12345
+C009844,missing_name,customers_10000.csv,9845,run_94de4abf48,,yochana.sibal4362@gmail.com,6515124570
+C009859,missing_email,customers_10000.csv,9860,run_94de4abf48,Yatan Cherian,,7257975331
+C009865,missing_email,customers_10000.csv,9866,run_94de4abf48,Sai Choudhary,,7174009059
+C009920,missing_name,customers_10000.csv,9921,run_94de4abf48,,nachiket.narula6533@gmail.com,7286334867
+C009934,invalid_phone,customers_10000.csv,9935,run_94de4abf48,Shravya Raval,shravya.raval3065@yahoo.com,00000
+C009949,missing_email,customers_10000.csv,9950,run_94de4abf48,Liam Oza,,9770941038
+C009967,missing_email,customers_10000.csv,9968,run_94de4abf48,Panini Rana,,8379241423
+C009971,missing_email,customers_10000.csv,9972,run_94de4abf48,Tanvi Varty,,8937020013
+C009995,missing_email,customers_10000.csv,9996,run_94de4abf48,Samarth Gupta,,7097037993
+C009996,missing_name,customers_10000.csv,9997,run_94de4abf48,,liam.parmer359@hotmail.com,8091446466

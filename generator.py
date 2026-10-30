@@ -40,6 +40,7 @@ NICKNAMES = {"john": "Jon", "katherine": "Kathryn", "catherine": "Kathrine", "mi
              "elizabeth": "Elisabeth", "alexander": "Alexandar", "ramesh": "Rameshh", "priya": "Pria"}
 DOMAINS = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com"]
 FIELDS = ["customer_id", "name", "email", "phone", "address"]
+LABEL_FIELDS = ["customer_id", "true_entity_id", "record_type", "invalid_kind"]
 
 
 class Generator:
@@ -142,6 +143,7 @@ class Generator:
     def invalid(self) -> dict:
         rec = self.unique()
         kind = self.rng.choice(["no_name", "no_email", "bad_phone"])
+        rec["_invalid_kind"] = kind
         if kind == "no_name":
             rec["name"] = ""
         elif kind == "no_email":
@@ -158,10 +160,23 @@ def generate(rows: int, seed: int = 42, exact_rate: float = 0.10,
     n_unique = max(rows - n_exact - n_prob - n_inv, 1)
 
     base = [g.unique() for _ in range(n_unique)]
+    for k, rec in enumerate(base, start=1):
+        rec["_entity"], rec["_type"] = f"E{k:06d}", "unique"
     out = list(base)
-    out += [g.exact_dup(g.rng.choice(base)) for _ in range(n_exact)]
-    out += [g.probable_dup(g.rng.choice(base)) for _ in range(n_prob)]
-    out += [g.invalid() for _ in range(n_inv)]
+    for _ in range(n_exact):
+        b = g.rng.choice(base)
+        rec = g.exact_dup(b)
+        rec["_entity"], rec["_type"] = b["_entity"], "exact_duplicate"
+        out.append(rec)
+    for _ in range(n_prob):
+        b = g.rng.choice(base)
+        rec = g.probable_dup(b)
+        rec["_entity"], rec["_type"] = b["_entity"], "probable_duplicate"
+        out.append(rec)
+    for k in range(n_inv):
+        rec = g.invalid()
+        rec["_entity"], rec["_type"] = f"X{k + 1:06d}", "invalid"
+        out.append(rec)
     g.rng.shuffle(out)
     for i, rec in enumerate(out, start=1):
         rec["customer_id"] = f"C{i:06d}"
@@ -179,13 +194,26 @@ def main() -> None:
     args = p.parse_args()
 
     out = Path(args.out or f"data/generated/customers_{args.rows}.csv")
-    out.parent.mkdir(parents=True, exist_ok=True)
     records = generate(args.rows, args.seed, args.exact_rate, args.probable_rate, args.invalid_rate)
+    write_dataset(records, out)
+    print(f"wrote {len(records)} rows -> {out} (faker={'yes' if _HAS_FAKER else 'no, fallback lists'})")
+
+
+def write_dataset(records: list[dict], out: Path) -> Path:
+    """Write the input CSV and, SEPARATELY, the expected-answer labels file next to it."""
+    out = Path(out)
+    out.parent.mkdir(parents=True, exist_ok=True)
     with open(out, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDS, lineterminator="\n")
         writer.writeheader()
         writer.writerows({k: r.get(k, "") for k in FIELDS} for r in records)
-    print(f"wrote {len(records)} rows -> {out} (faker={'yes' if _HAS_FAKER else 'no, fallback lists'})")
+    labels = out.with_name(out.stem + "_labels.csv")
+    with open(labels, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f, lineterminator="\n")
+        writer.writerow(LABEL_FIELDS)
+        for r in records:
+            writer.writerow([r["customer_id"], r["_entity"], r["_type"], r.get("_invalid_kind", "")])
+    return labels
 
 
 if __name__ == "__main__":

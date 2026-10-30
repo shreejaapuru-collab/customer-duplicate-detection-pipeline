@@ -1,0 +1,10 @@
+{
+  "true_duplicate_pairs": 2266,
+  "predicted_merged_pairs": 2121,
+  "precision": 1.0,
+  "recall": 0.936,
+  "missed_pairs": 145,
+  "missed_pairs_found_in_review_queue": 119,
+  "labelled_invalid_rows": 500,
+  "invalid_rows_rejected": 500
+}

@@ -27,6 +27,7 @@ class MatchConfig:
     auto_merge_threshold: float = 90.0
     review_threshold_with_identifier: float = 75.0
     review_threshold_name_only: float = 88.0
+    name_block_prefix: int = 2   # letters of first and last name used in the name-block key
 
 
 REVIEW_COLUMNS = [
@@ -73,12 +74,30 @@ def score_pair(r1: dict, r2: dict, cfg: MatchConfig = MatchConfig()):
     return None, sim, ""
 
 
-def _block_key(name_key: str) -> tuple[str, str]:
+def _block_key(name_key: str, prefix: int = 2) -> tuple[str, str]:
+    """(first `prefix` letters of first name, first `prefix` letters of last name).
+
+    prefix=1 -> loose blocks: more comparisons, catches typos near the start of a name
+    prefix=2 -> tight blocks: far fewer comparisons (the optimisation, see docs/design_tradeoffs.md)
+
+    NOTE: auto-merges and identifier-based review pairs are found through the email/phone
+    blocks, so this key only affects name-only review pairs - it can never cause a wrong merge.
+    """
     tokens = name_key.split()
-    return (tokens[0][0], tokens[-1][0]) if tokens else ("", "")
+    return (tokens[0][:prefix], tokens[-1][:prefix]) if tokens else ("", "")
 
 
-def find_duplicates(valid: pd.DataFrame, cfg: MatchConfig = MatchConfig()):
+def build_blocks(recs: list[dict], cfg: MatchConfig = MatchConfig()) -> dict:
+    blocks: dict[tuple, list[int]] = defaultdict(list)
+    for i, r in enumerate(recs):
+        blocks[("name",) + _block_key(r["name_key"], cfg.name_block_prefix)].append(i)
+        blocks[("email", r["email"])].append(i)
+        if r["phone"]:
+            blocks[("phone", r["phone"])].append(i)
+    return blocks
+
+
+def find_duplicates(valid: pd.DataFrame, cfg: MatchConfig = MatchConfig(), stats: dict | None = None):
     """Return (clusters, review_df).
 
     clusters: list of {"records": [dict, ...], "reasons": [str, ...]}, ordered by
@@ -88,28 +107,23 @@ def find_duplicates(valid: pd.DataFrame, cfg: MatchConfig = MatchConfig()):
     recs = valid.sort_values("customer_id", kind="stable").to_dict("records")
     uf = _UnionFind(len(recs))
 
-    blocks: dict[tuple, list[int]] = defaultdict(list)
-    for i, r in enumerate(recs):
-        blocks[("name",) + _block_key(r["name_key"])].append(i)
-        blocks[("email", r["email"])].append(i)
-        if r["phone"]:
-            blocks[("phone", r["phone"])].append(i)
+    blocks = build_blocks(recs, cfg)
 
-    seen: set[tuple[int, int]] = set()
+    compared = 0
     merge_pairs, review_pairs = [], []
     for members in blocks.values():
         for a in range(len(members)):
             for b in range(a + 1, len(members)):
                 i, j = members[a], members[b]  # i < j (members are in ascending order)
-                if (i, j) in seen:
-                    continue
-                seen.add((i, j))
+                compared += 1  # a pair sharing 2 blocks is scored twice - harmless, results are identical
                 decision, sim, reason = score_pair(recs[i], recs[j], cfg)
                 if decision == "merge":
                     uf.union(i, j)
                     merge_pairs.append((i, reason))
                 elif decision == "review":
                     review_pairs.append((i, j, sim, reason))
+    if stats is not None:
+        stats["pairs_compared"] = compared
 
     # build clusters
     groups: dict[int, list[int]] = defaultdict(list)

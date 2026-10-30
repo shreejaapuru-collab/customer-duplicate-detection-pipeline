@@ -6,8 +6,8 @@ import pandas as pd
 NULL_TOKENS = {"", "null", "none", "nan", "n/a", "nil", "-"}
 EMAIL_RE = re.compile(r"^[A-Za-z0-9._%+\-]+@[A-Za-z0-9\-]+(\.[A-Za-z0-9\-]+)*\.[A-Za-z]{2,}$")
 
-VALID_COLUMNS = ["customer_id", "name", "email", "phone", "address", "name_key"]
-REJECT_COLUMNS = ["record_id", "reason", "raw_name", "raw_email", "raw_phone"]
+VALID_COLUMNS = ["customer_id", "name", "email", "phone", "address", "name_key", "source_row"]
+REJECT_COLUMNS = ["record_id", "reason", "source_row", "raw_name", "raw_email", "raw_phone"]
 
 
 def clean_text(value) -> str | None:
@@ -84,6 +84,7 @@ def validate_records(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
             rejected_rows.append({
                 "record_id": cid or "",
                 "reason": ";".join(reasons),
+                "source_row": rec.get("source_row", ""),
                 "raw_name": rec.get("name", ""),
                 "raw_email": rec.get("email", ""),
                 "raw_phone": rec.get("phone", ""),
@@ -98,6 +99,7 @@ def validate_records(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
             "phone": phone,
             "address": address,
             "name_key": name_key(name),
+            "source_row": rec.get("source_row", ""),
         })
 
     valid = pd.DataFrame(valid_rows, columns=VALID_COLUMNS)

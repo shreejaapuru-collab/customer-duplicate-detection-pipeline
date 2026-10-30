@@ -9,6 +9,7 @@ log = logging.getLogger("dedup_pipeline")
 REQUIRED_COLUMNS = ["customer_id", "name", "email", "phone"]
 OPTIONAL_COLUMNS = ["address"]
 ALL_COLUMNS = REQUIRED_COLUMNS + OPTIONAL_COLUMNS
+OUTPUT_COLUMNS = ALL_COLUMNS + ["source_row"]   # source_row = line number in the input file
 
 
 class IngestionError(Exception):
@@ -20,7 +21,7 @@ class SchemaError(IngestionError):
 
 
 def _empty_frame() -> pd.DataFrame:
-    return pd.DataFrame({c: pd.Series(dtype="object") for c in ALL_COLUMNS})
+    return pd.DataFrame({c: pd.Series(dtype="object") for c in OUTPUT_COLUMNS})
 
 
 def ingest(path: str | Path) -> pd.DataFrame:
@@ -48,6 +49,11 @@ def ingest(path: str | Path) -> pd.DataFrame:
     if missing:
         raise SchemaError(f"missing required column(s): {', '.join(missing)}")
 
+    extra = [c for c in df.columns if c not in ALL_COLUMNS]
+    if extra:  # unexpected schema change: tolerated, but visible in the log
+        log.warning("unexpected extra column(s) ignored: %s", ", ".join(extra))
+
     if "address" not in df.columns:
         df["address"] = ""
-    return df[ALL_COLUMNS].copy()
+    df["source_row"] = [str(n) for n in range(2, len(df) + 2)]  # line 1 is the header
+    return df[OUTPUT_COLUMNS].copy()
