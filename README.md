@@ -1,22 +1,41 @@
 # Customer Duplicate Detection Pipeline
 
-A small, tested data-engineering pipeline that takes customer records, **validates** them,
-**finds exact and probable duplicates**, **merges** them with survivorship rules, tracks
-**lineage**, and sends uncertain matches to a **manual review queue**.
+Customer data often arrives with spelling differences, repeated contact details, and incomplete fields. This
+Python project takes a CSV of customer records, checks it, finds likely duplicates, and creates a cleaned
+set of customer records. When a match is uncertain, it leaves the records separate and adds the pair to a
+review queue instead of merging them automatically.
 
-No ML training and no UI - just a clean, reproducible, idempotent Python pipeline.
+The pipeline is intentionally local and straightforward to run. Its main focus is a reproducible 10,000-row
+batch, with transparent matching rules, source lineage, and reports that make the results easier to check.
 
+## What happens to the data
+
+```text
+Customer CSV
+    |
+    v
+Read and check the schema
+    |
+    v
+Validate and normalize records ------> rejected_records.csv
+    |
+    v
+Find matches ------------------------> review_queue.csv (uncertain pairs)
+    |
+    v
+Build customer records and lineage
+    |
+    +--------------------------------> merged_records.csv
+    +--------------------------------> lineage.json
+    +--------------------------------> reconciliation_report.csv
+    +--------------------------------> run_metrics.csv
 ```
-CSV -> Ingestion -> Validation -> Duplicate Detection -> Survivorship -> Lineage -> Outputs
-         |             |(rejects)        |(uncertain)                                 |
-     bad schema    rejected_records   review_queue.csv          merged_records / lineage / metrics
-```
 
-## Quick start
+## Get started
+
+Run the following commands from the project folder (the folder containing `main.py`).
 
 ### Windows PowerShell
-
-Run these commands from the project root (the folder containing `main.py`):
 
 ```powershell
 py -m venv .venv
@@ -25,25 +44,16 @@ python -m pip install -r requirements.txt
 
 python main.py
 python -m pytest -v
-
-python generator.py --rows 10000 --seed 42 --out data/generated/customers_10000.csv
-python main.py --input data/generated/customers_10000.csv --output-dir outputs/large
-python -m src.evaluate --labels data/generated/customers_10000_labels.csv --outputs outputs/large
 ```
 
-The generator writes the pipeline input to `customers_10000.csv` and its expected-answer labels
-separately to `customers_10000_labels.csv`; labels are never included in the input CSV. The
-evaluation command writes `evaluation_report.json` alongside the pipeline outputs. The pipeline
-also writes `reconciliation_report.csv` on every successful run.
-
-If PowerShell blocks activation, allow it for the current terminal only, then activate:
+If PowerShell prevents environment activation, allow it for this terminal session and try again:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\.venv\Scripts\Activate.ps1
 ```
 
-### macOS / Linux
+### macOS or Linux
 
 ```bash
 python3 -m venv .venv
@@ -52,99 +62,87 @@ python -m pip install -r requirements.txt
 
 python main.py
 python -m pytest -v
+```
 
+The first command runs the small sample in `data/sample/customers.csv`. Results go to `outputs/`, and
+the run log is written to `logs/pipeline.log`.
+
+## Try a 10,000-row run
+
+The seeded generator makes the input reproducible and writes evaluation labels to a separate file. Those
+labels are not included in the CSV passed to the pipeline.
+
+```powershell
 python generator.py --rows 10000 --seed 42 --out data/generated/customers_10000.csv
 python main.py --input data/generated/customers_10000.csv --output-dir outputs/large
 python -m src.evaluate --labels data/generated/customers_10000_labels.csv --outputs outputs/large
 ```
 
-## Project structure
+The evaluation command writes `evaluation_report.json`. The pipeline creates a
+`reconciliation_report.csv` for each successful run. See [docs/data_dictionary.md](docs/data_dictionary.md)
+for the fields in each file.
 
-```
-main.py              CLI entry point
-generator.py         synthetic data generator (seeded, scalable)
-src/
-  ingestion.py       read CSV, schema check (missing column => file rejected)
-  validation.py      normalise + validate rows -> valid / rejected
-  similarity.py      RapidFuzz Levenshtein-style similarity (with pure-Python fallback)
-  duplicate_detection.py   blocking + pair scoring + clustering + review queue
-  survivorship.py    golden-record rules
-  lineage.py         master_id -> source_records
-  reconcile.py       source-to-target count and key checks
-  evaluate.py        compare results with generator ground-truth labels
-  publish.py         atomic CSV/JSON writers, metrics upsert
-  pipeline.py        orchestrates all stages
-  logger.py          console + logs/pipeline.log
-tests/               pytest suite (validation, duplicates, retries, edge cases, evaluation)
-data/sample/         small hand-made dataset (covers every case)
-outputs/             sample results; outputs/large/ holds the 10k run
-docs/                architecture.md, data_dictionary.md
-```
+## How matching works
 
-## Matching rules
+The pipeline uses name, email, and phone. Addresses are carried into the final records but do not influence
+matching.
 
-| Condition | Result |
+| What the records have in common | What the pipeline does |
 |---|---|
-| same email **and** same phone | **auto-merge** (exact) |
-| name similarity >= 90 **and** same email *or* phone | **auto-merge** |
-| name similarity 75-90 and same email or phone | **review queue** |
-| name similarity >= 88, nothing else shared | **review queue** |
-| anything else | not a match |
+| Same email and same phone | Merge as an exact match |
+| Name similarity of at least 90 and a shared email or phone | Merge |
+| Name similarity of at least 75 and a shared email or phone, but below the merge threshold | Send to review |
+| Name similarity of at least 88 with no shared identifier | Send to review |
+| None of the above | Keep separate |
 
-Name similarity = `rapidfuzz.fuzz.ratio` on lower-cased, punctuation-free names (0-100).
-Examples: `John Smith` vs `Jon Smith` = 94.7, `John Smith` vs `John Smyth` = 90.0.
-Thresholds live in `MatchConfig` (`src/duplicate_detection.py`) and can be tuned.
+Name similarity is calculated with RapidFuzz when installed, with a pure-Python fallback. The thresholds
+are configurable through `MatchConfig` and the command-line options.
 
-**Survivorship** (per field): ignore nulls -> most frequent value -> value from the most complete
-record -> lowest `customer_id`. Fields that disagreed are listed in `conflicting_fields`.
+When records are merged, the pipeline chooses values field by field: it ignores nulls, uses the most
+frequent remaining value, then breaks ties using the most complete record and the lowest customer ID.
+Disagreements are recorded in `conflicting_fields`.
 
-## Outputs (`outputs/`)
+## Files produced
 
-| File | Contents |
+The default run writes these files under `outputs/` (or under the directory passed with `--output-dir`):
+
+| File | What you can use it for |
 |---|---|
-| `merged_records.csv` | one golden record per person: master_id, name, email, phone, address, source_ids, ... |
-| `review_queue.csv` | record1, record2, similarity_score, reason (+ names/emails/phones for the reviewer) |
-| `rejected_records.csv` | record_id, reason (+ raw values) |
-| `lineage.json` | `{"master_id": "M00001", "source_records": ["C001","C002","C003"], ...}` |
-| `reconciliation_report.csv` | checks that input rows reconcile, valid IDs appear in exactly one master, and review IDs are valid |
-| `run_metrics.csv` | run_id, source_file, start/end time, status/failure reason, counts, timings, ... |
-| `evaluation_report.json` | optional quality metrics from comparison with synthetic ground-truth labels |
+| `merged_records.csv` | One surviving customer record per detected group, with source IDs and match details |
+| `review_queue.csv` | Candidate pairs that need a person to decide |
+| `rejected_records.csv` | Invalid rows, their validation reasons, and source locations |
+| `lineage.json` | The source records and match details behind each master record |
+| `reconciliation_report.csv` | Checks that input rows, valid records, rejects, and master records balance |
+| `run_metrics.csv` | Run ID, source file, status, counts, failure reason, and timings |
+| `evaluation_report.json` | Optional comparison with the generator's separate expected-answer labels |
 
-Console/log summary, e.g.:
+For a quick check of the sample run, expect 16 input rows: 13 valid and 3 rejected. The result has 10 master
+records and 3 review pairs. The 10k run's checked-in outputs and reports are under `outputs/large/`.
+
+## Safe reruns and recovery
+
+The run ID is based on the input contents and matching configuration. Running the same input again replaces
+that run's metrics entry instead of adding a duplicate. Master IDs and data outputs are deterministic for
+the same input and configuration.
+
+Each output file is written atomically, and the metrics file is written last. The set of files is not one
+transaction, though. If a run fails while publishing, check `run_metrics.csv` for the failure and rerun the
+same input with the same output directory. A rerun regenerates and replaces the output files. This project
+processes each input as a full snapshot; it does not maintain incremental history for late-arriving updates.
+
+## Tests and performance
+
+Run the full test suite with:
+
+```powershell
+python -m pytest -v
 ```
-run_id=run_1dea43ce02   input_rows=16   valid_rows=13   rejected_rows=3
-duplicates=3            merged_records=2   output_records=10   review_pairs=3
-```
 
-## Data validation rules
+The tests cover validation, empty and malformed inputs, duplicate matching, survivorship, lineage,
+idempotency, retry after a simulated failure, generator reproducibility, and checks against generated
+ground-truth labels.
 
-* `customer_id` required and unique (first occurrence kept)
-* `name` required; `email` required and well-formed
-* `phone` is optional (null is allowed so survivorship can fill it from a duplicate), but if present it must
-  be a valid 10-digit number starting 6-9 (`+91` / leading `0` are stripped)
-* Missing required **column** => the whole file is rejected (exit code 2); header-only / empty file => 0 records, no crash
-
-## Idempotency
-
-* Outputs are rewritten atomically (temp file + rename), never appended.
-* `master_id`s are deterministic (sorted by smallest source id).
-* `run_id` is a hash of input content + config, so re-running the same input replaces its metrics row.
-* Running `python main.py` twice gives byte-identical data outputs (tested). Only the timestamps in
-  `run_metrics.csv` change.
-* Each output file is replaced atomically, but publishing the set of output files is not one transaction.
-  If a run fails partway through publishing, rerun the same input with the same output directory; this
-  regenerates and replaces all outputs. The automated suite simulates a mid-publish failure and retry.
-
-## Synthetic data
-
-`generator.py` creates reproducible (seeded) data: 75% unique customers, 10% exact duplicates (some with a
-blanked phone to exercise survivorship), 10% probable duplicates (John/Jon, Katherine/Kathryn, typos; share
-phone, email, or nothing) and 5% invalid rows (missing name, null email, invalid phone). Uses Faker when installed.
-All data is synthetic, so there are no reuse-rights concerns.
-
-## Performance check
-
-Measure the full pipeline on a reproducible 10,000-row generated batch in PowerShell:
+To time a 10,000-row run in PowerShell:
 
 ```powershell
 python generator.py --rows 10000 --seed 42 --out "$env:TEMP\customers_10000.csv"
@@ -155,25 +153,35 @@ $elapsed = Measure-Command {
 "Elapsed: {0:N2} seconds" -f $elapsed.TotalSeconds
 ```
 
-Record the elapsed time reported on your machine along with the Python version and whether
-RapidFuzz is installed; runtime varies by hardware and matcher backend. The generator is deterministic
-for a fixed seed, so the input remains reproducible.
+A recorded run with Python 3.13.3 and RapidFuzz processed 10,000 rows (9,500 valid, 500 rejected) and
+produced 7,613 master records in 2.58 seconds. This is one machine's result, not a runtime guarantee.
+Blocking avoids comparing every record pair; for larger workloads, distributed or database-side blocking
+would be a reasonable next step. The intended and measured target here is 10,000 rows; performance at
+100,000 rows has not been measured.
 
-One measured run in the development environment: Python 3.13.3, RapidFuzz, 10,000 input rows
-(9,500 valid, 500 rejected), 7,613 output masters, **2.58 seconds**. Treat this as a reference
-measurement, not a performance guarantee; hardware and dependency versions affect runtime.
+## Project layout
 
-## Scalability notes
+```text
+main.py                 Command-line entry point
+generator.py            Seeded customer data and separate evaluation labels
+src/                    Pipeline, validation, matching, lineage, and reporting modules
+tests/                  Automated tests
+data/sample/            Small example input
+outputs/                Sample results and the 10k run evidence
+docs/                   Architecture and data dictionary
+design_tradeoffs.md     Matching, recovery, and performance decisions
+```
 
-Comparing every pair is O(n^2). The pipeline uses **blocking**: only records sharing a phone, an email, or the
-same (first-initial, last-initial) of the name are compared. RapidFuzz speeds up scoring of candidate
-pairs; a reasonable next optimization for large volumes is distributed blocking (Spark/Dask) or a
-database-side join on blocking keys.
+## Assumptions and limitations
 
-## Known limitations / assumptions
+- Email is required; phone and address are optional. Phone values are normalized as Indian mobile numbers.
+- Matching does not use address information.
+- Matching clusters are transitive: if A matches B and B matches C, all three join the same master. A bad
+  link can therefore over-merge records; uncertain pairs are kept out of the clusters.
+- Name-only review suggestions depend on the name blocking keys. Typos in both the first and last initials
+  may not be found unless an email or phone is shared.
+- The records are held in memory. A much larger workload would need a different processing approach.
+- This is a single-customer-file pipeline, so cross-table reference-key checks do not apply.
 
-* Matching is name/email/phone only; addresses are carried through but not used to match.
-* Clusters are formed transitively (A~B and B~C => A, B, C merge), a standard trade-off; review-queue pairs are
-  never auto-merged.
-* A typo in the *first letter* of both first and last name is only caught if phone or email is shared (blocking trade-off).
-* Two different people with identical names and no shared identifier go to the review queue by design.
+For more on the pipeline stages and trade-offs, see [docs/architecture.md](docs/architecture.md) and
+[design_tradeoffs.md](design_tradeoffs.md).

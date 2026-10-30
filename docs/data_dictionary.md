@@ -1,5 +1,8 @@
 # Data Dictionary
 
+This page describes the columns used by the customer pipeline and the files it writes. Input values are
+read as strings so identifiers and phone numbers keep their original formatting until validation.
+
 ## Input - `customers.csv`
 | Column | Required | Description |
 |---|---|---|
@@ -9,9 +12,9 @@
 | phone | no | 10-digit number starting 6-9; `+91`/`0` prefix stripped; null allowed |
 | address | no | Free text; carried into the merged record |
 
-The generator writes a separate `customers_<n>_labels.csv` file for evaluation. It contains
-`customer_id`, `true_entity_id`, `record_type`, and `invalid_kind`; label columns are not added
-to the pipeline input.
+When it creates synthetic data, the generator also writes a separate `customers_<n>_labels.csv` file.
+That file contains `customer_id`, `true_entity_id`, `record_type`, and `invalid_kind` for evaluation only;
+the pipeline input itself has no label columns.
 
 ## `merged_records.csv`
 | Column | Description |
@@ -41,12 +44,13 @@ to the pipeline input.
 | raw_name, raw_email, raw_phone | Original values |
 
 ## `lineage.json`
-List of `{master_id, source_records, match_reasons, conflicting_fields, survivorship_rule, run_id}`.
+For each master record, this file lists its source records, match reasons, conflicting fields, survivorship
+rule, and run ID. In other words, it lets a reviewer trace a merged value back to the records that supplied it.
 
 ## `reconciliation_report.csv`
-One row per check with `check_name`, `expected`, `actual`, `status` (`PASS`/`FAIL`), and `detail`.
-Checks include input = valid + rejected, every valid ID assigned to exactly one master, unique master IDs,
-explained rejects, and valid review-queue references.
+Each row reports one check using `check_name`, `expected`, `actual`, `status` (`PASS`/`FAIL`), and `detail`.
+The checks confirm that input rows are accounted for, every valid ID belongs to exactly one master, master
+IDs are unique, rejects have reasons, and review-queue IDs point to known records.
 
 ## `run_metrics.csv`
 Columns: `run_id`, `source_file`, `start_time`, `end_time`, `status`, `failure_reason`, `input_count`,
@@ -56,6 +60,7 @@ Columns: `run_id`, `source_file`, `start_time`, `end_time`, `status`, `failure_r
 or `FAILED`.
 
 ## `evaluation_report.json`
-Optional output from `python -m src.evaluate`. Reports pairwise duplicate precision/recall, missed pairs
-found in the review queue, and whether labelled-invalid records were rejected. It compares outputs with
-the separate synthetic labels file; these labels are evaluation-only, not pipeline input.
+This optional report is created by `python -m src.evaluate`. It compares the pipeline results with the
+generator's separate synthetic labels and reports pairwise precision and recall, missed matches found in
+the review queue, and whether labelled-invalid records were rejected. The labels are for evaluation only;
+they are never used as pipeline input.

@@ -1,30 +1,31 @@
 # Design and Trade-off Note
 
-## Goal
-Find exact and probable duplicate customers, merge them with transparent rules, keep lineage, and send
-uncertain cases to a human. Priorities (from the brief): correctness, clarity, testing, safe reruns.
+This project is designed to find likely duplicate customers without hiding why a match was made. It favors
+clear rules, traceable outputs, and safe reruns over adding services or model-training complexity.
 
 ## Key decisions
 
-| Decision | Why | Trade-off |
+| Decision | Why it fits this project | What it costs |
 |---|---|---|
-| Rule-based scoring (RapidFuzz ratio + shared email/phone), no ML | Explainable: every merge has a recorded reason; no training data needed | Less flexible than a learned model |
-| Auto-merge only with a strong signal (name >= 90 **and** shared email/phone, or exact email+phone) | A wrong merge corrupts customer data; a missed merge is cheap to fix | Some true duplicates land in the review queue instead of being merged |
-| Review queue for uncertain pairs | Humans decide ambiguous cases (John Smith / John Smyth) | Needs a person; queue is de-duplicated to one best pair per pair of clusters |
-| Transitive clustering (union-find) | A~B and B~C means one person | One bad link can over-merge; review pairs never join clusters |
-| Phone is optional, email required | A null phone is exactly what survivorship should fill from a duplicate | A record with no email is rejected even if the phone is good |
-| Deterministic everything (sorted input, `M00001` ids, content-hash `run_id`) | Reruns and row-order changes give identical outputs | master_id values can shift if new records change the sort order |
-| Atomic writes, metrics written last | A crash never leaves a half-written file; a missing/FAILED metrics row flags an incomplete run | Files are not swapped as one transaction (see restart section in README) |
+| Rule-based scoring with RapidFuzz and shared identifiers | Each merge has a reason that can be inspected; no training data is needed. | It is less adaptable than a model trained on reviewed matches. |
+| A high bar for automatic merges | A wrong merge can damage customer data, so uncertain cases stay separate. | Some real duplicates need a human to approve them. |
+| A review queue for ambiguous pairs | Reviewers get the cases where the available evidence is not strong enough. | Someone has to work through the queue; similar suggestions are grouped to keep it manageable. |
+| Transitive clusters using union-find | Pairwise matches can be turned into one master record per person. | A mistaken link can join an entire cluster. |
+| Email required; phone optional | A missing phone can be filled from another record in the same cluster. | Records without an email are rejected, even when their phone is present. |
+| Stable ordering and content-based run IDs | Re-running the same data produces repeatable IDs and replaces the same metrics row. | Adding records can change the numbered master IDs. |
+| Atomic file writes, metrics written last | A run can be retried, and the metrics help show whether it completed. | The output files are not replaced together as one transaction. |
 
-## Survivorship (per field)
+## Choosing values for a merged record
 Ignore nulls -> most frequent value -> value from the most complete record -> lowest `customer_id`.
 Fields where sources disagreed are listed in `conflicting_fields` so nothing is silently overwritten.
 
-## Performance reasoning
-Comparing every pair of n records is O(n^2): 100,000 rows = ~5 billion comparisons.
-1. **Blocking (baseline):** only compare records that share a phone, an email, or a name block.
-2. **Optimisation:** tighten the name block from (first letter, last letter) to
-   (first 2 letters of first name, first 2 letters of last name) via `name_block_prefix`.
+## Performance and scope
+
+Comparing every possible pair grows as O(n²), which quickly becomes expensive. The pipeline first groups
+records into blocks using phone, email, and name keys, then scores only pairs within the same block.
+
+One optimization tested for name-only review suggestions was tightening the name block from the first and
+last initials to the first two letters of each name, using `name_block_prefix`.
 
 Auto-merges and identifier-based review pairs are found through the email/phone blocks, so the name block only
 feeds *name-only* review suggestions. Tightening it cannot cause a wrong merge.
@@ -35,15 +36,14 @@ Measured on 10,000 synthetic rows (pure-Python matcher, seed 42):
 | 1 (loose) | 292,312 | 22.5 s | 1.00 | 0.937 |
 | 2 (tight, default) | 91,050 | 6.9 s | 1.00 | 0.937 |
 
-About 3x fewer comparisons and 3x faster, with the same precision and recall; the only cost is that fewer
-name-only pairs are suggested for review (111 of 141 missed pairs still appear in the review queue, vs 140).
-Scaling check (same settings, `name_block_prefix=2`): 30,000 rows -> 760,639 pairs compared (0.17% of the
-450 million all-pairs comparisons), 72 s detect time, precision 1.00, recall 0.949.
-These numbers use the slow pure-Python fallback matcher; RapidFuzz is much faster.
+In this benchmark, the tighter block made about three times fewer comparisons and took about a third of the
+detection time, with the same precision and recall. The trade-off was fewer name-only suggestions in the
+review queue. A separate 30,000-row run with `name_block_prefix=2` compared 760,639 pairs rather than
+450 million possible pairs, with 1.00 precision and 0.949 recall. These benchmark timings used the slower
+pure-Python fallback matcher and may differ on other machines.
 
-The intended and measured operating target for this project is 10,000 input rows. The larger
-30,000-row run above is a scaling observation, not a required or guaranteed operating target;
-100,000-row performance has not been measured.
+The intended and measured target for this project is 10,000 input rows. The 30,000-row run is included as a
+scaling observation, not a promise of production capacity. Performance at 100,000 rows has not been measured.
 
 ## Quality measurement
 `generator.py` writes expected-answer labels to a separate `*_labels.csv`. `src/evaluate.py` compares pipeline
